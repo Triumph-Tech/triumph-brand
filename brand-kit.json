@@ -91,8 +91,7 @@
       "usage": "Primary logo — preferred in most contexts"
     },
     "logo_mark": {
-      "light": "logos/icon/triumph-logo-mark-light.svg",
-      "dark": "logos/icon/triumph-logo-mark-dark.svg",
+      "file": "logos/icon/triumph-logo-mark.svg",
       "usage": "Icon only — use when space is limited or brand is already established in context"
     },
     "wordmark": {
@@ -139,13 +138,4 @@
           "saturation": "0%",
           "opacity": "15%",
           "blend_mode": "Luminosity"
-        },
-        {
-          "type": "color",
-          "color": "#0A2540",
-          "name": "Invictus Blue"
-        }
-      ]
-    }
-  }
-}
+ 
