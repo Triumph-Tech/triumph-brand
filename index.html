@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triumph Brand Kit</title>
+  <style>
+    @font-face {
+      font-family: 'Goldman Sans';
+      src: url('fonts/GoldmanSans_Rg.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Goldman Sans';
+      src: url('fonts/GoldmanSans_It.ttf') format('truetype');
+      font-weight: 400;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: 'Goldman Sans';
+      src: url('fonts/GoldmanSans_Md.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Goldman Sans';
+      src: url('fonts/GoldmanSans_Bd.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Goldman Sans';
+      src: url('fonts/GoldmanSans_Lt.ttf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --invictus-blue: #0A2540;
+      --invictus-blue-2: #0E3258;
+      --invictus-blue-3: #164371;
+      --invictus-blue-4: #245B96;
+      --electric-blue: #4BA9DF;
+      --electric-blue-light: #85D3FF;
+      --twilight-blue: #5D758B;
+      --twilight-light: #CFD8E3;
+      --white: #FFFFFF;
+      --off-white: #FAFAFA;
+      --light-gray: #E3E3E3;
+      --dark: #1A1A1A;
+    }
+
+    body {
+      font-family: 'Goldman Sans', system-ui, sans-serif;
+      font-weight: 400;
+      background: var(--off-white);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--invictus-blue);
+      padding: 24px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      background: var(--electric-blue);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-mark::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: var(--invictus-blue);
+      clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    }
+
+    .logo-mark-inner {
+      width: 14px;
+      height: 14px;
+      background: var(--white);
+      clip-path: polygon(0 100%, 100% 0, 100% 100%);
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo-text {
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--white);
+      letter-spacing: 0.01em;
+    }
+
+    .header-label {
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--electric-blue);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* HERO */
+    .hero {
+      background: var(--invictus-blue-2);
+      padding: 72px 48px;
+      color: var(--white);
+      border-bottom: 3px solid var(--electric-blue);
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-inner {
+      max-width: 960px;
+      width: 100%;
+    }
+
+    .hero-eyebrow {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--electric-blue);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--twilight-light);
+      max-width: 600px;
+      line-height: 1.7;
+    }
+
+    /* AGENT CALLOUT */
+    .agent-callout {
+      background: var(--invictus-blue);
+      border-left: 4px solid var(--electric-blue);
+      padding: 32px 48px;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .agent-callout-inner {
+      max-width: 960px;
+      width: 100%;
+    }
+
+    .agent-callout h2 {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--electric-blue);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .agent-callout p {
+      font-size: 15px;
+      color: var(--twilight-light);
+      max-width: 760px;
+      line-height: 1.7;
+    }
+
+    .agent-callout code {
+      font-family: 'Courier New', monospace;
+      background: var(--invictus-blue-2);
+      color: var(--electric-blue-light);
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 64px 48px;
+    }
+
+    section {
+      margin-bottom: 64px;
+    }
+
+    .section-eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--electric-blue);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    section h2 {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--invictus-blue);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    /* FILE CARDS */
+    .file-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .file-card {
+      background: var(--white);
+      border: 1px solid var(--light-gray);
+      border-radius: 8px;
+      padding: 24px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .file-card:hover {
+      border-color: var(--electric-blue);
+      box-shadow: 0 4px 16px rgba(75, 169, 223, 0.1);
+    }
+
+    .file-card a {
+      text-decoration: none;
+    }
+
+    .file-card-path {
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      color: var(--electric-blue);
+      font-weight: 600;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .file-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--invictus-blue);
+      margin-bottom: 8px;
+    }
+
+    .file-card p {
+      font-size: 13px;
+      color: var(--twilight-blue);
+      line-height: 1.6;
+    }
+
+    .file-card .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 20px;
+      margin-top: 12px;
+      background: rgba(75, 169, 223, 0.1);
+      color: var(--electric-blue);
+    }
+
+    /* JSON SCHEMA */
+    .schema-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .schema-table thead tr {
+      background: var(--invictus-blue);
+      color: var(--white);
+    }
+
+    .schema-table thead th {
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .schema-table tbody tr {
+      border-bottom: 1px solid var(--light-gray);
+      background: var(--white);
+    }
+
+    .schema-table tbody tr:nth-child(even) {
+      background: var(--off-white);
+    }
+
+    .schema-table td {
+      padding: 12px 16px;
+      vertical-align: top;
+    }
+
+    .schema-table td:first-child {
+      font-family: 'Courier New', monospace;
+      color: var(--electric-blue);
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .schema-table td:last-child {
+      color: var(--twilight-blue);
+      font-size: 13px;
+    }
+
+    /* COLOR SWATCHES */
+    .color-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .swatch {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--white);
+      border: 1px solid var(--light-gray);
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 13px;
+    }
+
+    .swatch-dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .swatch-info strong {
+      display: block;
+      font-size: 13px;
+      color: var(--invictus-blue);
+    }
+
+    .swatch-info span {
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      color: var(--twilight-blue);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--invictus-blue);
+      color: var(--twilight-light);
+      text-align: center;
+      padding: 32px 48px;
+      font-size: 13px;
+      font-weight: 300;
+    }
+
+    footer a {
+      color: var(--electric-blue);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-area">
+      <div class="logo-mark"><div class="logo-mark-inner"></div></div>
+      <span class="logo-text">triumph</span>
+    </div>
+    <span class="header-label">Brand Kit</span>
+  </header>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">triumph.tech / brand</p>
+      <h1>Triumph Brand Kit</h1>
+      <p>This repository is the single source of truth for Triumph Tech's brand assets, colors, typography, and voice. It is designed to be consumed by AI agents and automation tools to produce consistently branded work.</p>
+    </div>
+  </div>
+
+  <div class="agent-callout">
+    <div class="agent-callout-inner">
+    <h2>Agent Instructions</h2>
+    <p>
+      Start with <code>brand-kit.json</code> — it contains all structured brand data in a single machine-readable file. For tone, logo usage, and writing rules, read <code>brand-guidelines.md</code>. All asset paths in the JSON are relative to the repo root. When producing branded output, use <strong>Invictus Blue (#0A2540)</strong> as the primary color, <strong>Goldman Sans</strong> as the sole typeface, and follow the voice summary in the <code>voice</code> object. The logo files are SVGs in <code>logos/</code> — prefer the combination mark in most contexts.
+    </p>
+    </div>
+  </div>
+
+  <main>
+
+    <section>
+      <p class="section-eyebrow">Repository</p>
+      <h2>Key Files</h2>
+      <div class="file-grid">
+
+        <div class="file-card">
+          <span class="file-card-path">brand-kit.json</span>
+          <h3>Brand Kit</h3>
+          <p>Machine-readable brand data. Contains colors, typography, logo paths, mascot info, voice summary, and brand element specs. Start here.</p>
+          <span class="tag">Primary Reference</span>
+        </div>
+
+        <div class="file-card">
+          <span class="file-card-path">brand-guidelines.md</span>
+          <h3>Brand Guidelines</h3>
+          <p>Human and agent-readable guidelines covering tone of voice, logo usage rules, approved backgrounds, clearspace, taglines, and image wash technique.</p>
+          <span class="tag">Voice + Usage</span>
+        </div>
+
+        <div class="file-card">
+          <span class="file-card-path">logos/</span>
+          <h3>Logo Files</h3>
+          <p>SVG files for the combination mark (icon + wordmark), logo mark (icon only), wordmark, and Digital Revival. Each available in light and dark variants.</p>
+          <span class="tag">Assets</span>
+        </div>
+
+        <div class="file-card">
+          <span class="file-card-path">fonts/</span>
+          <h3>Goldman Sans</h3>
+          <p>Self-hosted Goldman Sans font files in all weights: Thin (100), Light (300), Regular (400), Medium (500), Bold (700), Black (900). Regular is the default.</p>
+          <span class="tag">Typography</span>
+        </div>
+
+        <div class="file-card">
+          <span class="file-card-path">mascot/magnus/</span>
+          <h3>Magnus</h3>
+          <p>Assets for Magnus, Triumph's mascot character. Primarily used to represent the Magnus VS Code plugin.</p>
+          <span class="tag">Assets</span>
+        </div>
+
+        <div class="file-card">
+          <span class="file-card-path">assets/embellishments/</span>
+          <h3>Embellishments</h3>
+          <p>Decorative brand elements including engineering blueprint-style drawings and Roman architectural motifs for use in graphic applications.</p>
+          <span class="tag">Assets</span>
+        </div>
+
+        <div class="file-card">
+          <span class="file-card-path">guidelines/</span>
+          <h3>Official Guidelines PDF</h3>
+          <p>The full Triumph Tech brand guidelines document. Reference for visual design decisions not covered by the JSON or markdown files.</p>
+          <span class="tag">Reference</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <p class="section-eyebrow">brand-kit.json</p>
+      <h2>JSON Schema</h2>
+      <table class="schema-table">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>brand</td>
+            <td>Company name, tagline ("Diligent Innovation"), website URL, and brand initiatives including Digital Revival.</td>
+          </tr>
+          <tr>
+            <td>colors.primary</td>
+            <td>Invictus Blue (#0A2540) — main brand color. Includes RGB, CMYK, text_on value, and 3 tonal variations.</td>
+          </tr>
+          <tr>
+            <td>colors.secondary</td>
+            <td>Electric Blue (#4BA9DF) — accents and highlights. Includes RGB, CMYK, text_on value, and 3 tonal variations.</td>
+          </tr>
+          <tr>
+            <td>colors.accent</td>
+            <td>Twilight Blue (#5D758B) — backgrounds and UI elements. Includes RGB, CMYK, text_on value, and 3 tonal variations.</td>
+          </tr>
+          <tr>
+            <td>colors.grayscale</td>
+            <td>8-step grayscale scale from #FFFFFF to #1A1A1A.</td>
+          </tr>
+          <tr>
+            <td>colors.semantic</td>
+            <td>Success, warning, error, and info colors. To be defined.</td>
+          </tr>
+          <tr>
+            <td>typography.primary</td>
+            <td>Goldman Sans — sole authorized typeface. Lists all font weights with self-hosted file paths. Default weight: 400.</td>
+          </tr>
+          <tr>
+            <td>logos</td>
+            <td>Paths for combination_mark, logo_mark, wordmark, and digital_revival logos in light and dark variants. Includes clearspace rule and approved backgrounds.</td>
+          </tr>
+          <tr>
+            <td>mascot</td>
+            <td>Magnus — name, description, and asset file paths.</td>
+          </tr>
+          <tr>
+            <td>voice</td>
+            <td>Brand voice summary, tone descriptors, words to avoid, and example phrases.</td>
+          </tr>
+          <tr>
+            <td>usage</td>
+            <td>Dos and don'ts for brand application.</td>
+          </tr>
+          <tr>
+            <td>brand_elements.image_wash</td>
+            <td>Layer specs for the Invictus Blue image treatment: desaturate image to 0%, set opacity to 15% with Luminosity blend, place Invictus Blue beneath.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <p class="section-eyebrow">Colors</p>
+      <h2>Brand Colors</h2>
+
+      <p style="font-size: 13px; color: var(--twilight-blue); margin-bottom: 24px;">All color values, tones, and text-on recommendations are available in <code style="font-family: monospace; background: var(--light-gray); padding: 2px 5px; border-radius: 3px; font-size: 12px;">brand-kit.json</code> under the <code style="font-family: monospace; background: var(--light-gray); padding: 2px 5px; border-radius: 3px; font-size: 12px;">colors</code> key.</p>
+
+      <div class="color-row">
+        <div class="swatch">
+          <div class="swatch-dot" style="background: #0A2540;"></div>
+          <div class="swatch-info">
+            <strong>Invictus Blue</strong>
+            <span>#0A2540</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-dot" style="background: #0E3258;"></div>
+          <div class="swatch-info">
+            <strong>Invictus Blue 2</strong>
+            <span>#0E3258</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-dot" style="background: #164371;"></div>
+          <div class="swatch-info">
+            <strong>Invictus Blue 3</strong>
+            <span>#164371</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-dot" style="background: #245B96;"></div>
+          <div class="swatch-info">
+            <strong>Invictus Blue 4</strong>
+            <span>#245B96</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="color-row">
+        <div class="swatch">
+          <div class="swatch-dot" style="background: #4BA9DF;"></div>
+          <div class="swatch-info">
+            <strong>Electric Blue</strong>
+            <span>#4BA9DF</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-dot" style="background: #3097D2;"></div>
+          <div class="swatch-info">
+            <strong>Electric Blue 2</strong>
+            <span>#3097D2</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-dot" style="background: #51BAF6;"></div>
+          <div class="swatch-info">
+            <strong>Electric Blue 3</strong>
+            <span>#51BAF6</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-dot" style="background: #85D3FF;"></div>
+          <div class="swatch-info">
+            <strong>Electric Blue 4</strong>
+            <span>#85D3FF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="color-row">
+        <div class="swatch">
+          <div class="swatch-dot" style="background: #5D758B;"></div>
+          <div class="swatch-info">
+            <strong>Twilight Blue</strong>
+            <span>#5D758B</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-dot" style="background: #425466;"></div>
+          <div class="swatch-info">
+            <strong>Twilight Blue 2</strong>
+            <span>#425466</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-dot" style="background: #97A9BA;"></div>
+          <div class="swatch-info">
+            <strong>Twilight Blue 3</strong>
+            <span>#97A9BA</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-dot" style="background: #CFD8E3;"></div>
+          <div class="swatch-info">
+            <strong>Twilight Blue 4</strong>
+            <span>#CFD8E3</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Triumph Tech &mdash; <a href="https://triumph.tech">triumph.tech</a> &mdash; Diligent Innovation</p>
+    <p style="margin-top: 10px; font-size: 11px; color: var(--twilight-blue);">This site was auto-generated by an AI agent using <code style="font-family: monospace;">brand-kit.json</code>.</p>
+  </footer>
+
+</body>
+</html>

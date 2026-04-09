@@ -1,0 +1,151 @@
+{
+  "brand": {
+    "name": "Triumph Tech",
+    "tagline": "Diligent Innovation",
+    "website": "https://triumph.tech",
+    "initiatives": {
+      "digital_revival": {
+        "name": "Digital Revival",
+        "description": "Triumph Tech's rallying cry for transformation. Conveys the mission to help churches reimagine and revitalize their digital presence with modern, impactful tools.",
+        "logos": {
+          "light": "logos/digital-revival/digital-revival-light.svg",
+          "dark": "logos/digital-revival/digital-revival-dark.svg"
+        }
+      }
+    }
+  },
+  "colors": {
+    "primary": {
+      "name": "Invictus Blue",
+      "hex": "#0A2540",
+      "rgb": "10, 37, 64",
+      "cmyk": "98, 82, 47, 51",
+      "text_on": "#FFFFFF",
+      "tones": [
+        { "hex": "#0E3258", "rgb": "14, 50, 88", "cmyk": "100, 84, 39, 32", "text_on": "#FFFFFF" },
+        { "hex": "#164371", "rgb": "22, 67, 113", "cmyk": "99, 79, 30, 16", "text_on": "#FFFFFF" },
+        { "hex": "#245B96", "rgb": "36, 91, 150", "cmyk": "92, 69, 15, 2", "text_on": "#FFFFFF" }
+      ],
+      "usage": "Main brand color"
+    },
+    "secondary": {
+      "name": "Electric Blue",
+      "hex": "#4BA9DF",
+      "rgb": "75, 169, 223",
+      "cmyk": "64, 18, 0, 0",
+      "text_on": "#FFFFFF",
+      "tones": [
+        { "hex": "#3097D2", "rgb": "48, 151, 210", "cmyk": "73, 28, 0, 0", "text_on": "#FFFFFF" },
+        { "hex": "#51BAF6", "rgb": "81, 186, 246", "cmyk": "57, 11, 0, 0", "text_on": "#FFFFFF" },
+        { "hex": "#85D3FF", "rgb": "133, 211, 255", "cmyk": "41, 3, 0, 0", "text_on": "#1A1A1A" }
+      ],
+      "usage": "Secondary brand color, accents and highlights"
+    },
+    "accent": {
+      "name": "Twilight Blue",
+      "hex": "#5D758B",
+      "rgb": "93, 117, 139",
+      "cmyk": "69, 48, 33, 7",
+      "text_on": "#FFFFFF",
+      "tones": [
+        { "hex": "#425466", "rgb": "66, 84, 102", "cmyk": "77, 61, 43, 24", "text_on": "#FFFFFF" },
+        { "hex": "#97A9BA", "rgb": "151, 169, 186", "cmyk": "43, 27, 19, 0", "text_on": "#1A1A1A" },
+        { "hex": "#CFD8E3", "rgb": "207, 216, 227", "cmyk": "17, 10, 5, 0", "text_on": "#1A1A1A" }
+      ],
+      "usage": "Supporting color for backgrounds, UI elements, and neutral contrast"
+    },
+    "grayscale": [
+      "#FFFFFF", "#FAFAFA", "#E3E3E3", "#C2C2C2",
+      "#929292", "#595959", "#333333", "#1A1A1A"
+    ],
+    "semantic": {
+      "success": { "hex": "" },
+      "warning": { "hex": "" },
+      "error": { "hex": "" },
+      "info": { "hex": "" }
+    }
+  },
+  "typography": {
+    "primary": {
+      "family": "Goldman Sans",
+      "default_weight": 400,
+      "source": "self-hosted",
+      "files": {
+        "100": "fonts/GoldmanSans_Th.ttf",
+        "300": "fonts/GoldmanSans_Lt.ttf",
+        "400": "fonts/GoldmanSans_Rg.ttf",
+        "400italic": "fonts/GoldmanSans_It.ttf",
+        "500": "fonts/GoldmanSans_Md.ttf",
+        "500italic": "fonts/GoldmanSans_MdIt.ttf",
+        "700": "fonts/GoldmanSans_Bd.ttf",
+        "700italic": "fonts/GoldmanSans_BdIt.ttf",
+        "900": "fonts/GoldmanSans_Blk.ttf"
+      },
+      "note": "Goldman Sans is the sole authorized typeface for all Triumph Tech communications."
+    }
+  },
+  "logos": {
+    "combination_mark": {
+      "light": "logos/primary/triumph-combination-mark-light.svg",
+      "dark": "logos/primary/triumph-combination-mark-dark.svg",
+      "usage": "Primary logo — preferred in most contexts"
+    },
+    "logo_mark": {
+      "light": "logos/icon/triumph-logo-mark-light.svg",
+      "dark": "logos/icon/triumph-logo-mark-dark.svg",
+      "usage": "Icon only — use when space is limited or brand is already established in context"
+    },
+    "wordmark": {
+      "light": "logos/wordmark/triumph-wordmark-light.svg",
+      "dark": "logos/wordmark/triumph-wordmark-dark.svg"
+    },
+    "digital_revival": {
+      "light": "logos/digital-revival/digital-revival-light.svg",
+      "dark": "logos/digital-revival/digital-revival-dark.svg"
+    },
+    "clearspace": "Maintain clear space equal to the height of the logo mark on all sides.",
+    "backgrounds": {
+      "approved": ["white", "#0A2540", "#0E3258"],
+      "avoid": "Do not place the logo on busy backgrounds or unapproved colors."
+    }
+  },
+  "mascot": {
+    "name": "Magnus",
+    "description": "Magnus is a cheeky robot whose only job is to assist the Triumph team in their mission to empower and serve the Rock community.",
+    "assets": {
+      "full_body": "mascot/magnus/magnus-full-body.svg",
+      "head": "mascot/magnus/magnus-head.svg",
+      "head_bg_invictus": "mascot/magnus/magnus-head-bg-invictus.svg",
+      "icon": "mascot/magnus/magnus-icon.svg",
+      "icon_bg_invictus": "mascot/magnus/magnus-icon-bg-invictus.svg"
+    }
+  },
+  "voice": {
+    "summary": "Clear, confident, and warm. Professional but approachable. Solution-focused with a heart for service. Avoid jargon, hype, and cold corporate language.",
+    "tone": ["innovative", "professional", "approachable", "warm", "collaborative", "solution-focused"],
+    "avoid": [],
+    "example_phrases": []
+  },
+  "usage": {
+    "dos": [],
+    "donts": []
+  },
+  "brand_elements": {
+    "image_wash": {
+      "description": "A branded image effect for subtle image backgrounds in graphic applications.",
+      "layers": [
+        {
+          "type": "image",
+          "saturation": "0%",
+          "opacity": "15%",
+          "blend_mode": "Luminosity"
+        },
+        {
+          "type": "color",
+          "color": "#0A2540",
+          "name": "Invictus Blue"
+        }
+      ]
+    }
+  }
+}
