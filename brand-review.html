@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triumph Brand Review</title>
+  <style>
+    @font-face { font-family: 'Goldman Sans'; src: url('fonts/GoldmanSans_Th.ttf') format('truetype'); font-weight: 100; font-style: normal; }
+    @font-face { font-family: 'Goldman Sans'; src: url('fonts/GoldmanSans_Lt.ttf') format('truetype'); font-weight: 300; font-style: normal; }
+    @font-face { font-family: 'Goldman Sans'; src: url('fonts/GoldmanSans_Rg.ttf') format('truetype'); font-weight: 400; font-style: normal; }
+    @font-face { font-family: 'Goldman Sans'; src: url('fonts/GoldmanSans_It.ttf') format('truetype'); font-weight: 400; font-style: italic; }
+    @font-face { font-family: 'Goldman Sans'; src: url('fonts/GoldmanSans_Md.ttf') format('truetype'); font-weight: 500; font-style: normal; }
+    @font-face { font-family: 'Goldman Sans'; src: url('fonts/GoldmanSans_MdIt.ttf') format('truetype'); font-weight: 500; font-style: italic; }
+    @font-face { font-family: 'Goldman Sans'; src: url('fonts/GoldmanSans_Bd.ttf') format('truetype'); font-weight: 700; font-style: normal; }
+    @font-face { font-family: 'Goldman Sans'; src: url('fonts/GoldmanSans_BdIt.ttf') format('truetype'); font-weight: 700; font-style: italic; }
+    @font-face { font-family: 'Goldman Sans'; src: url('fonts/GoldmanSans_Blk.ttf') format('truetype'); font-weight: 900; font-style: normal; }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary:   #0A2540;
+      --primary-2: #0E3258;
+      --primary-3: #164371;
+      --primary-4: #245B96;
+      --secondary:   #4BA9DF;
+      --secondary-2: #3097D2;
+      --secondary-3: #51BAF6;
+      --secondary-4: #85D3FF;
+      --accent:   #5D758B;
+      --accent-2: #425466;
+      --accent-3: #97A9BA;
+      --accent-4: #CFD8E3;
+      --white: #FDFDFD;
+      --near-black: #0A0A0A;
+      --border: #D9D9E3;
+      --page-bg: #F4F5F7;
+    }
+
+    body {
+      font-family: 'Goldman Sans', system-ui, sans-serif;
+      font-weight: 400;
+      background: var(--page-bg);
+      color: #1A1A1A;
+      line-height: 1.6;
+    }
+
+    /* ---- NAV ---- */
+    nav {
+      background: var(--primary);
+      padding: 0 48px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 2px solid var(--secondary);
+    }
+    nav a {
+      color: var(--accent-4);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 16px 0;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    nav a:hover, nav a:focus { color: #fff; border-color: var(--secondary); }
+    .nav-logo { margin-right: auto; padding: 14px 0; }
+    .nav-logo img { height: 20px; display: block; }
+
+    /* ---- PAGE ---- */
+    .page-header {
+      background: var(--primary-2);
+      padding: 48px;
+      color: #fff;
+      border-bottom: 3px solid var(--secondary);
+    }
+    .page-header h1 { font-size: 32px; font-weight: 700; margin-bottom: 6px; }
+    .page-header p { font-size: 14px; color: var(--accent-4); font-weight: 300; }
+
+    main { max-width: 1200px; margin: 0 auto; padding: 56px 48px; }
+
+    section { margin-bottom: 72px; }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--secondary);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    section > h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 28px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    h3.sub-heading {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin: 28px 0 12px;
+    }
+
+    /* ---- COLOR SWATCHES ---- */
+    .swatch-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    .swatch {
+      flex: 1;
+      min-width: 140px;
+      max-width: 200px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .swatch-chip {
+      height: 80px;
+    }
+    .swatch-info {
+      background: #fff;
+      padding: 10px 12px;
+      font-size: 11px;
+      line-height: 1.6;
+    }
+    .swatch-info strong {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: #1A1A1A;
+    }
+    .swatch-info span { color: #6B7280; font-family: monospace; }
+    .swatch-info .swatch-meta { color: #9CA3AF; font-size: 10px; }
+    .swatch-primary .swatch-chip { background: var(--primary); }
+    .swatch-primary-2 .swatch-chip { background: var(--primary-2); }
+    .swatch-primary-3 .swatch-chip { background: var(--primary-3); }
+    .swatch-primary-4 .swatch-chip { background: var(--primary-4); }
+    .swatch-secondary .swatch-chip { background: var(--secondary); }
+    .swatch-secondary-2 .swatch-chip { background: var(--secondary-2); }
+    .swatch-secondary-3 .swatch-chip { background: var(--secondary-3); }
+    .swatch-secondary-4 .swatch-chip { background: var(--secondary-4); }
+    .swatch-accent .swatch-chip { background: var(--accent); }
+    .swatch-accent-2 .swatch-chip { background: var(--accent-2); }
+    .swatch-accent-3 .swatch-chip { background: var(--accent-3); }
+    .swatch-accent-4 .swatch-chip { background: var(--accent-4); }
+
+    /* ---- INTERFACE SCALE ---- */
+    .interface-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .interface-panel {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .interface-panel-header {
+      padding: 10px 16px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+    .interface-panel-header.light { background: #E5E7EB; color: #6B7280; }
+    .interface-panel-header.dark { background: #1A2030; color: #6B7280; }
+    .interface-step {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 9px 16px;
+    }
+    .interface-chip {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      flex-shrink: 0;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .interface-step-info { font-size: 11px; }
+    .interface-step-info strong { display: block; font-size: 12px; }
+
+    /* ---- SEMANTIC COLORS ---- */
+    .semantic-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .semantic-card {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    .semantic-card-header {
+      padding: 8px 12px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .semantic-row {
+      display: flex;
+      gap: 6px;
+      padding: 10px 12px;
+      align-items: center;
+    }
+    .semantic-chip { width: 28px; height: 28px; border-radius: 5px; flex-shrink: 0; }
+    .semantic-label { font-size: 10px; line-height: 1.5; }
+    .semantic-label strong { display: block; font-size: 11px; font-family: monospace; }
+    .semantic-label span { color: #9CA3AF; }
+
+    /* ---- ASSET CARDS ---- */
+    .asset-group {
+      margin-bottom: 40px;
+    }
+    .asset-group-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .asset-group-desc {
+      font-size: 12px;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .asset-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .asset-card {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    }
+    .asset-preview {
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .asset-preview img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    /* Background variants */
+    .bg-dark    { background: #0A2540; }
+    .bg-dark-2  { background: #0E3258; }
+    .bg-light   { background: #FDFDFD; border-top: 1px solid #E5E7EB; }
+    .bg-checker {
+      background-color: #e5e5e5;
+      background-image:
+        linear-gradient(45deg, #ccc 25%, transparent 25%),
+        linear-gradient(-45deg, #ccc 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ccc 75%),
+        linear-gradient(-45deg, transparent 75%, #ccc 75%);
+      background-size: 16px 16px;
+      background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+    }
+    .bg-checker-dark {
+      background-color: #1a2535;
+      background-image:
+        linear-gradient(45deg, #0d1a28 25%, transparent 25%),
+        linear-gradient(-45deg, #0d1a28 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #0d1a28 75%),
+        linear-gradient(-45deg, transparent 75%, #0d1a28 75%);
+      background-size: 16px 16px;
+      background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+    }
+    .bg-neutral { background: #8B8BA7; }
+
+    .asset-meta {
+      background: #fff;
+      padding: 10px 14px;
+    }
+    .asset-meta-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: #1A1A1A;
+      margin-bottom: 3px;
+    }
+    .asset-meta-path {
+      font-size: 10px;
+      font-family: monospace;
+      color: #9CA3AF;
+    }
+    .asset-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 500;
+      padding: 2px 7px;
+      border-radius: 3px;
+      margin-top: 5px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .badge-light  { background: #0A2540; color: #85D3FF; }
+    .badge-dark   { background: #E5E7EB; color: #425466; }
+    .badge-svg    { background: #EBF2FA; color: #005DD7; }
+    .badge-format { background: #F3F4F6; color: #6B7280; }
+
+    /* ---- EMBELLISHMENT PANEL ---- */
+    .embellishment-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .embellishment-panel {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    }
+    .embellishment-preview {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .embellishment-preview img { max-width: 100%; max-height: 100%; object-fit: contain; }
+    .embellishment-label {
+      padding: 8px 14px;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .embellishment-label.light { background: #E5E7EB; color: #6B7280; }
+    .embellishment-label.dark  { background: #0D1117; color: #5D758B; }
+
+    /* ---- TYPOGRAPHY ---- */
+    .type-grid {
+      display: grid;
+      gap: 16px;
+    }
+    .type-row {
+      background: #fff;
+      border-radius: 8px;
+      padding: 18px 24px;
+      display: flex;
+      align-items: baseline;
+      gap: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+    }
+    .type-label {
+      min-width: 100px;
+      font-size: 11px;
+      color: var(--accent-3);
+      font-weight: 400;
+      font-family: monospace;
+    }
+    .type-sample { flex: 1; font-family: 'Goldman Sans', sans-serif; font-size: 20px; color: var(--primary); }
+
+    /* ---- RADIUS ---- */
+    .radius-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .radius-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+      text-align: center;
+      min-width: 120px;
+    }
+    .radius-demo {
+      width: 64px;
+      height: 64px;
+      background: var(--primary);
+      margin: 0 auto 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .radius-demo-inner { width: 40px; height: 40px; background: var(--secondary); }
+    .radius-name { font-size: 13px; font-weight: 600; color: var(--primary); margin-bottom: 2px; }
+    .radius-value { font-size: 11px; font-family: monospace; color: var(--accent); }
+    .radius-usage { font-size: 10px; color: #9CA3AF; margin-top: 6px; max-width: 120px; }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logos/primary/triumph-combination-mark-light.svg" alt="Triumph Tech" />
+    </div>
+    <a href="#colors">Colors</a>
+    <a href="#logos">Logos</a>
+    <a href="#subbrands">Sub-brands</a>
+    <a href="#avatars">Avatars</a>
+    <a href="#magnus">Magnus</a>
+    <a href="#embellishments">Embellishments</a>
+    <a href="#typography">Typography</a>
+    <a href="#radius">Radius</a>
+  </nav>
+
+  <div class="page-header">
+    <h1>Triumph Brand Review</h1>
+    <p>Visual reference for all colors, assets, and design tokens. For human eyes only — not for agent consumption.</p>
+  </div>
+
+  <main>
+
+    <!-- ======================== COLORS ======================== -->
+    <section id="colors">
+      <p class="section-label">Color System</p>
+      <h2>Brand Colors</h2>
+
+      <h3 class="sub-heading">Primary — Invictus Blue</h3>
+      <div class="swatch-row">
+        <div class="swatch swatch-primary">
+          <div class="swatch-chip"></div>
+          <div class="swatch-info">
+            <strong>Invictus Blue</strong>
+            <span>#0A2540</span><br>
+            <span class="swatch-meta">RGB 10, 37, 64 &bull; CMYK 98/82/47/51</span>
+          </div>
+        </div>
+        <div class="swatch swatch-primary-2">
+          <div class="swatch-chip"></div>
+          <div class="swatch-info">
+            <strong>Tone 1</strong>
+            <span>#0E3258</span><br>
+            <span class="swatch-meta">RGB 14, 50, 88 &bull; CMYK 100/84/39/32</span>
+          </div>
+        </div>
+        <div class="swatch swatch-primary-3">
+          <div class="swatch-chip"></div>
+          <div class="swatch-info">
+            <strong>Tone 2</strong>
+            <span>#164371</span><br>
+            <span class="swatch-meta">RGB 22, 67, 113 &bull; CMYK 99/79/30/16</span>
+          </div>
+        </div>
+        <div class="swatch swatch-primary-4">
+          <div class="swatch-chip"></div>
+          <div class="swatch-info">
+            <strong>Tone 3</strong>
+            <span>#245B96</span><br>
+            <span class="swatch-meta">RGB 36, 91, 150 &bull; CMYK 92/69/15/2</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-heading">Secondary — Electric Blue</h3>
+      <div class="swatch-row">
+        <div class="swatch swatch-secondary">
+          <div class="swatch-chip"></div>
+          <div class="swatch-info">
+            <strong>Electric Blue</strong>
+            <span>#4BA9DF</span><br>
+            <span class="swatch-meta">RGB 75, 169, 223 &bull; CMYK 64/18/0/0</span>
+          </div>
+        </div>
+        <div class="swatch swatch-secondary-2">
+          <div class="swatch-chip"></div>
+          <div class="swatch-info">
+            <strong>Tone 1</strong>
+            <span>#3097D2</span><br>
+            <span class="swatch-meta">RGB 48, 151, 210 &bull; CMYK 73/28/0/0</span>
+          </div>
+        </div>
+        <div class="swatch swatch-secondary-3">
+          <div class="swatch-chip"></div>
+          <div class="swatch-info">
+            <strong>Tone 2</strong>
+            <span>#51BAF6</span><br>
+            <span class="swatch-meta">RGB 81, 186, 246 &bull; CMYK 57/11/0/0</span>
+          </div>
+        </div>
+        <div class="swatch swatch-secondary-4">
+          <div class="swatch-chip"></div>
+          <div class="swatch-info">
+            <strong>Tone 3</strong>
+            <span>#85D3FF</span><br>
+            <span class="swatch-meta">RGB 133, 211, 255 &bull; CMYK 41/3/0/0</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-heading">Accent — Twilight Blue</h3>
+      <div class="swatch-row">
+        <div class="swatch swatch-accent">
+          <div class="swatch-chip"></div>
+          <div class="swatch-info">
+            <strong>Twilight Blue</strong>
+            <span>#5D758B</span><br>
+            <span class="swatch-meta">RGB 93, 117, 139 &bull; CMYK 69/48/33/7</span>
+          </div>
+        </div>
+        <div class="swatch swatch-accent-2">
+          <div class="swatch-chip"></div>
+          <div class="swatch-info">
+            <strong>Tone 1</strong>
+            <span>#425466</span><br>
+            <span class="swatch-meta">RGB 66, 84, 102 &bull; CMYK 77/61/43/24</span>
+          </div>
+        </div>
+        <div class="swatch swatch-accent-3">
+          <div class="swatch-chip"></div>
+          <div class="swatch-info">
+            <strong>Tone 2</strong>
+            <span>#97A9BA</span><br>
+            <span class="swatch-meta">RGB 151, 169, 186 &bull; CMYK 43/27/19/0</span>
+          </div>
+        </div>
+        <div class="swatch swatch-accent-4">
+          <div class="swatch-chip"></div>
+          <div class="swatch-info">
+            <strong>Tone 3</strong>
+            <span>#CFD8E3</span><br>
+            <span class="swatch-meta">RGB 207, 216, 227 &bull; CMYK 17/10/5/0</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-heading">Interface Scale</h3>
+      <p style="font-size:12px;color:var(--accent);margin-bottom:16px;">Seven-step neutral scale. Inverts symmetrically in dark mode — softest becomes darkest background, strongest becomes lightest foreground.</p>
+      <div class="interface-grid">
+
+        <div class="interface-panel">
+          <div class="interface-panel-header light">Light Mode</div>
+          <div style="background:#f0f0f0;">
+            <div class="interface-step" style="background:#fff;">
+              <div class="interface-chip" style="background:#FDFDFD; border:1px solid #ddd;"></div>
+              <div class="interface-step-info"><strong style="color:#1A1A1A;">Softest</strong><span style="font-family:monospace;font-size:11px;color:#888;">#FDFDFD</span></div>
+            </div>
+            <div class="interface-step" style="background:#f5f5f5;">
+              <div class="interface-chip" style="background:#F8F8FC; border:1px solid #ddd;"></div>
+              <div class="interface-step-info"><strong style="color:#1A1A1A;">Softer</strong><span style="font-family:monospace;font-size:11px;color:#888;">#F8F8FC</span></div>
+            </div>
+            <div class="interface-step" style="background:#f5f5f5;">
+              <div class="interface-chip" style="background:#D9D9E3;"></div>
+              <div class="interface-step-info"><strong style="color:#1A1A1A;">Soft</strong><span style="font-family:monospace;font-size:11px;color:#888;">#D9D9E3</span></div>
+            </div>
+            <div class="interface-step" style="background:#f5f5f5;">
+              <div class="interface-chip" style="background:#8B8BA7;"></div>
+              <div class="interface-step-info"><strong style="color:#1A1A1A;">Medium</strong><span style="font-family:monospace;font-size:11px;color:#888;">#8B8BA7</span></div>
+            </div>
+            <div class="interface-step" style="background:#f5f5f5;">
+              <div class="interface-chip" style="background:#3D444D;"></div>
+              <div class="interface-step-info"><strong style="color:#1A1A1A;">Strong</strong><span style="font-family:monospace;font-size:11px;color:#888;">#3D444D</span></div>
+            </div>
+            <div class="interface-step" style="background:#f5f5f5;">
+              <div class="interface-chip" style="background:#0D1117;"></div>
+              <div class="interface-step-info"><strong style="color:#1A1A1A;">Stronger</strong><span style="font-family:monospace;font-size:11px;color:#888;">#0D1117</span></div>
+            </div>
+            <div class="interface-step" style="background:#f5f5f5;">
+              <div class="interface-chip" style="background:#0A0A0A;"></div>
+              <div class="interface-step-info"><strong style="color:#1A1A1A;">Strongest</strong><span style="font-family:monospace;font-size:11px;color:#888;">#0A0A0A</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="interface-panel">
+          <div class="interface-panel-header dark">Dark Mode</div>
+          <div style="background:#0A0A0A;">
+            <div class="interface-step" style="background:#0D1117;">
+              <div class="interface-chip" style="background:#0D1117; border:1px solid #222;"></div>
+              <div class="interface-step-info"><strong style="color:#fff;">Softest</strong><span style="font-family:monospace;font-size:11px;color:#5D758B;">#0D1117</span></div>
+            </div>
+            <div class="interface-step" style="background:#0D1117;">
+              <div class="interface-chip" style="background:#0A0A0A; border:1px solid #222;"></div>
+              <div class="interface-step-info"><strong style="color:#fff;">Softer</strong><span style="font-family:monospace;font-size:11px;color:#5D758B;">#0A0A0A</span></div>
+            </div>
+            <div class="interface-step" style="background:#0D1117;">
+              <div class="interface-chip" style="background:#3D444D;"></div>
+              <div class="interface-step-info"><strong style="color:#fff;">Soft</strong><span style="font-family:monospace;font-size:11px;color:#5D758B;">#3D444D</span></div>
+            </div>
+            <div class="interface-step" style="background:#0D1117;">
+              <div class="interface-chip" style="background:#8B8BA7;"></div>
+              <div class="interface-step-info"><strong style="color:#fff;">Medium</strong><span style="font-family:monospace;font-size:11px;color:#5D758B;">#8B8BA7</span></div>
+            </div>
+            <div class="interface-step" style="background:#0D1117;">
+              <div class="interface-chip" style="background:#D9D9E3;"></div>
+              <div class="interface-step-info"><strong style="color:#fff;">Strong</strong><span style="font-family:monospace;font-size:11px;color:#5D758B;">#D9D9E3</span></div>
+            </div>
+            <div class="interface-step" style="background:#0D1117;">
+              <div class="interface-chip" style="background:#F8F8FC;"></div>
+              <div class="interface-step-info"><strong style="color:#fff;">Stronger</strong><span style="font-family:monospace;font-size:11px;color:#5D758B;">#F8F8FC</span></div>
+            </div>
+            <div class="interface-step" style="background:#0D1117;">
+              <div class="interface-chip" style="background:#FDFDFD;"></div>
+              <div class="interface-step-info"><strong style="color:#fff;">Strongest</strong><span style="font-family:monospace;font-size:11px;color:#5D758B;">#FDFDFD</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h3 class="sub-heading">Semantic Colors</h3>
+      <div class="semantic-grid">
+
+        <!-- Success -->
+        <div class="semantic-card">
+          <div class="semantic-card-header" style="background:#EBF7ED;color:#01A11E;">Success</div>
+          <div class="semantic-row" style="background:#EBF7ED;">
+            <div class="semantic-chip" style="background:#01A11E;"></div>
+            <div class="semantic-label"><strong>#01A11E</strong><span>Forecolor — Light</span></div>
+          </div>
+          <div class="semantic-row" style="background:#EBF7ED;">
+            <div class="semantic-chip" style="background:#EBF7ED; border:1px solid #c3e6c8;"></div>
+            <div class="semantic-label"><strong>#EBF7ED</strong><span>Background — Light</span></div>
+          </div>
+          <div class="semantic-row" style="background:#0B2E18;">
+            <div class="semantic-chip" style="background:#80D08F;"></div>
+            <div class="semantic-label" style="color:#ccc;"><strong style="color:#80D08F;">#80D08F</strong><span>Forecolor — Dark</span></div>
+          </div>
+          <div class="semantic-row" style="background:#0B2E18;">
+            <div class="semantic-chip" style="background:#0B2E18; border:1px solid #1a4a28;"></div>
+            <div class="semantic-label" style="color:#ccc;"><strong style="color:#80D08F;">#0B2E18</strong><span>Background — Dark</span></div>
+          </div>
+        </div>
+
+        <!-- Warning -->
+        <div class="semantic-card">
+          <div class="semantic-card-header" style="background:#FBF5EB;color:#E68E16;">Warning</div>
+          <div class="semantic-row" style="background:#FBF5EB;">
+            <div class="semantic-chip" style="background:#E68E16;"></div>
+            <div class="semantic-label"><strong>#E68E16</strong><span>Forecolor — Light</span></div>
+          </div>
+          <div class="semantic-row" style="background:#FBF5EB;">
+            <div class="semantic-chip" style="background:#FBF5EB; border:1px solid #f0dfb8;"></div>
+            <div class="semantic-label"><strong>#FBF5EB</strong><span>Background — Light</span></div>
+          </div>
+          <div class="semantic-row" style="background:#382812;">
+            <div class="semantic-chip" style="background:#F2BF72;"></div>
+            <div class="semantic-label" style="color:#ccc;"><strong style="color:#F2BF72;">#F2BF72</strong><span>Forecolor — Dark</span></div>
+          </div>
+          <div class="semantic-row" style="background:#382812;">
+            <div class="semantic-chip" style="background:#382812; border:1px solid #5a3e1a;"></div>
+            <div class="semantic-label" style="color:#ccc;"><strong style="color:#F2BF72;">#382812</strong><span>Background — Dark</span></div>
+          </div>
+        </div>
+
+        <!-- Danger -->
+        <div class="semantic-card">
+          <div class="semantic-card-header" style="background:#FAEBED;color:#D70015;">Danger</div>
+          <div class="semantic-row" style="background:#FAEBED;">
+            <div class="semantic-chip" style="background:#D70015;"></div>
+            <div class="semantic-label"><strong>#D70015</strong><span>Forecolor — Light</span></div>
+          </div>
+          <div class="semantic-row" style="background:#FAEBED;">
+            <div class="semantic-chip" style="background:#FAEBED; border:1px solid #f0c8cc;"></div>
+            <div class="semantic-label"><strong>#FAEBED</strong><span>Background — Light</span></div>
+          </div>
+          <div class="semantic-row" style="background:#350E17;">
+            <div class="semantic-chip" style="background:#E67782;"></div>
+            <div class="semantic-label" style="color:#ccc;"><strong style="color:#E67782;">#E67782</strong><span>Forecolor — Dark</span></div>
+          </div>
+          <div class="semantic-row" style="background:#350E17;">
+            <div class="semantic-chip" style="background:#350E17; border:1px solid #5a1a28;"></div>
+            <div class="semantic-label" style="color:#ccc;"><strong style="color:#E67782;">#350E17</strong><span>Background — Dark</span></div>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="semantic-card">
+          <div class="semantic-card-header" style="background:#EBF2FA;color:#005DD7;">Info</div>
+          <div class="semantic-row" style="background:#EBF2FA;">
+            <div class="semantic-chip" style="background:#005DD7;"></div>
+            <div class="semantic-label"><strong>#005DD7</strong><span>Forecolor — Light</span></div>
+          </div>
+          <div class="semantic-row" style="background:#EBF2FA;">
+            <div class="semantic-chip" style="background:#EBF2FA; border:1px solid #c0d8f0;"></div>
+            <div class="semantic-label"><strong>#EBF2FA</strong><span>Background — Light</span></div>
+          </div>
+          <div class="semantic-row" style="background:#0A203D;">
+            <div class="semantic-chip" style="background:#80AEEB;"></div>
+            <div class="semantic-label" style="color:#ccc;"><strong style="color:#80AEEB;">#80AEEB</strong><span>Forecolor — Dark</span></div>
+          </div>
+          <div class="semantic-row" style="background:#0A203D;">
+            <div class="semantic-chip" style="background:#0A203D; border:1px solid #1a3a5a;"></div>
+            <div class="semantic-label" style="color:#ccc;"><strong style="color:#80AEEB;">#0A203D</strong><span>Background — Dark</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================== LOGOS ======================== -->
+    <section id="logos">
+      <p class="section-label">Logos</p>
+      <h2>Logo Lockups</h2>
+
+      <!-- Combination Mark -->
+      <div class="asset-group">
+        <div class="asset-group-title">Combination Mark</div>
+        <div class="asset-group-desc">Primary full logo — icon + wordmark. Preferred in most marketing and collateral contexts.</div>
+        <div class="asset-grid">
+          <div class="asset-card">
+            <div class="asset-preview bg-dark">
+              <img src="logos/primary/triumph-combination-mark-light.svg" alt="Combination Mark — Light" />
+            </div>
+            <div class="asset-meta">
+              <div class="asset-meta-title">Combination Mark — Light</div>
+              <div class="asset-meta-path">logos/primary/triumph-combination-mark-light.svg</div>
+              <span class="asset-badge badge-light">Light variant</span>
+              <span class="asset-badge badge-svg">SVG</span>
+            </div>
+          </div>
+          <div class="asset-card">
+            <div class="asset-preview bg-light">
+              <img src="logos/primary/triumph-combination-mark-dark.svg" alt="Combination Mark — Dark" />
+            </div>
+            <div class="asset-meta">
+              <div class="asset-meta-title">Combination Mark — Dark</div>
+              <div class="asset-meta-path">logos/primary/triumph-combination-mark-dark.svg</div>
+              <span class="asset-badge badge-dark">Dark variant</span>
+              <span class="asset-badge badge-svg">SVG</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo Mark -->
+      <div class="asset-group">
+        <div class="asset-group-title">Logo Mark (Icon Only)</div>
+        <div class="asset-group-desc">Icon-only submark — for avatars, favicons, and small spaces where the full brand is already established.</div>
+        <div class="asset-grid">
+          <div class="asset-card">
+            <div class="asset-preview bg-dark">
+              <img src="logos/icon/triumph-logo-mark-light.svg" alt="Logo Mark — Light" />
+            </div>
+            <div class="asset-meta">
+              <div class="asset-meta-title">Logo Mark — Light</div>
+              <div class="asset-meta-path">logos/icon/triumph-logo-mark-light.svg</div>
+              <span class="asset-badge badge-light">Light variant</span>
+              <span class="asset-badge badge-svg">SVG</span>
+            </div>
+          </div>
+          <div class="asset-card">
+            <div class="asset-preview bg-light">
+              <img src="logos/icon/triumph-logo-mark-dark.svg" alt="Logo Mark — Dark" />
+            </div>
+            <div class="asset-meta">
+              <div class="asset-meta-title">Logo Mark — Dark</div>
+              <div class="asset-meta-path">logos/icon/triumph-logo-mark-dark.svg</div>
+              <span class="asset-badge badge-dark">Dark variant</span>
+              <span class="asset-badge badge-svg">SVG</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wordmark -->
+      <div class="asset-group">
+        <div class="asset-group-title">Wordmark</div>
+        <div class="asset-group-desc">Text-only version of the Triumph Tech logotype.</div>
+        <div class="asset-grid">
+          <div class="asset-card">
+            <div class="asset-preview bg-dark">
+              <img src="logos/wordmark/triumph-wordmark-light.svg" alt="Wordmark — Light" />
+            </div>
+            <div class="asset-meta">
+              <div class="asset-meta-title">Wordmark — Light</div>
+              <div class="asset-meta-path">logos/wordmark/triumph-wordmark-light.svg</div>
+              <span class="asset-badge badge-light">Light variant</span>
+              <span class="asset-badge badge-svg">SVG</span>
+            </div>
+          </div>
+          <div class="asset-card">
+            <div class="asset-preview bg-light">
+              <img src="logos/wordmark/triumph-wordmark-dark.svg" alt="Wordmark — Dark" />
+            </div>
+            <div class="asset-meta">
+              <div class="asset-meta-title">Wordmark — Dark</div>
+              <div class="asset-meta-path">logos/wordmark/triumph-wordmark-dark.svg</div>
+              <span class="asset-badge badge-dark">Dark variant</span>
+              <span class="asset-badge badge-svg">SVG</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ======================== SUB-BRANDS ======================== -->
+    <section id="subbrands">
+      <p class="section-label">Sub-brands</p>
+      <h2>Digital Revival</h2>
+
+      <div class="asset-group">
+        <div class="asset-group-desc">Triumph Tech's rallying cry for transformation — helping churches reimagine and revitalize their digital presence.</div>
+        <div class="asset-grid">
+          <div class="asset-card">
+            <div class="asset-preview bg-dark">
+              <img src="logos/digital-revival/digital-revival-light.svg" alt="Digital Revival — Light" />
+            </div>
+            <div class="asset-meta">
+              <div class="asset-meta-title">Digital Revival — Light</div>
+              <div class="asset-meta-path">logos/digital-revival/digital-revival-light.svg</div>
+              <span class="asset-badge badge-light">Light variant</span>
+              <span class="asset-badge badge-svg">SVG</span>
+            </div>
+          </div>
+          <div class="asset-card">
+            <div class="asset-preview bg-light">
+              <img src="logos/digital-revival/digital-revival-dark.svg" alt="Digital Revival — Dark" />
+            </div>
+            <div class="asset-meta">
+              <div class="asset-meta-title">Digital Revival — Dark</div>
+              <div class="asset-meta-path">logos/digital-revival/digital-revival-dark.svg</div>
+              <span class="asset-badge badge-dark">Dark variant</span>
+              <span class="asset-badge badge-svg">SVG</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== AVATARS ======================== -->
+    <section id="avatars">
+      <p class="section-label">Logos</p>
+      <h2>Avatar</h2>
+      <p style="font-size:12px;color:var(--accent);margin-bottom:20px;">Compact brand icon for organization avatars, profile images, and partner listings. The logo mark SVGs are used as avatar source files.</p>
+
+      <div class="asset-grid">
+
+        <div class="asset-card">
+          <div class="asset-preview bg-dark">
+            <img src="logos/icon/triumph-logo-mark-light.svg" alt="Avatar — Light on Primary" />
+          </div>
+          <div class="asset-meta">
+            <div class="asset-meta-title">Avatar — Light on Invictus Blue</div>
+            <div class="asset-meta-path">logos/icon/triumph-logo-mark-light.svg</div>
+            <span class="asset-badge badge-light">Light variant</span>
+            <span class="asset-badge" style="background:#EBF7ED;color:#01A11E;">Approved bg</span>
+          </div>
+        </div>
+
+        <div class="asset-card">
+          <div class="asset-preview bg-checker">
+            <img src="logos/icon/triumph-logo-mark-light.svg" alt="Avatar — Light, Transparent" />
+          </div>
+          <div class="asset-meta">
+            <div class="asset-meta-title">Avatar — Light, Transparent bg</div>
+            <div class="asset-meta-path">logos/icon/triumph-logo-mark-light.svg</div>
+            <span class="asset-badge badge-light">Light variant</span>
+            <span class="asset-badge badge-format">Transparent</span>
+          </div>
+        </div>
+
+        <div class="asset-card">
+          <div class="asset-preview bg-checker" style="background-color:#f0f0f0;">
+            <img src="logos/icon/triumph-logo-mark-dark.svg" alt="Avatar — Dark, Transparent" />
+          </div>
+          <div class="asset-meta">
+            <div class="asset-meta-title">Avatar — Dark, Transparent bg</div>
+            <div class="asset-meta-path">logos/icon/triumph-logo-mark-dark.svg</div>
+            <span class="asset-badge badge-dark">Dark variant</span>
+            <span class="asset-badge badge-format">Transparent</span>
+          </div>
+        </div>
+
+        <div class="asset-card">
+          <div class="asset-preview bg-light">
+            <img src="logos/icon/triumph-logo-mark-dark.svg" alt="Avatar — Dark on Softest" />
+          </div>
+          <div class="asset-meta">
+            <div class="asset-meta-title">Avatar — Dark on Softest (#FDFDFD)</div>
+            <div class="asset-meta-path">logos/icon/triumph-logo-mark-dark.svg</div>
+            <span class="asset-badge badge-dark">Dark variant</span>
+            <span class="asset-badge" style="background:#EBF7ED;color:#01A11E;">Approved bg</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================== MAGNUS ======================== -->
+    <section id="magnus">
+      <p class="section-label">Personas</p>
+      <h2>Magnus — Mascot</h2>
+      <p style="font-size:12px;color:var(--accent);margin-bottom:20px;">Magnus is a cheeky robot whose only job is to assist the Triumph team. For internal and playful contexts only — never a replacement for official brand logos.</p>
+
+      <div class="asset-grid">
+
+        <div class="asset-card">
+          <div class="asset-preview bg-checker" style="height:240px;">
+            <img src="mascot/magnus/magnus-full-body.svg" alt="Magnus Full Body" />
+          </div>
+          <div class="asset-meta">
+            <div class="asset-meta-title">Full Body</div>
+            <div class="asset-meta-path">mascot/magnus/magnus-full-body.svg</div>
+            <span class="asset-badge badge-format">Transparent bg</span>
+            <span class="asset-badge badge-svg">SVG</span>
+          </div>
+        </div>
+
+        <div class="asset-card">
+          <div class="asset-preview bg-checker">
+            <img src="mascot/magnus/magnus-head.svg" alt="Magnus Head" />
+          </div>
+          <div class="asset-meta">
+            <div class="asset-meta-title">Head</div>
+            <div class="asset-meta-path">mascot/magnus/magnus-head.svg</div>
+            <span class="asset-badge badge-format">Transparent bg</span>
+            <span class="asset-badge badge-svg">SVG</span>
+          </div>
+        </div>
+
+        <div class="asset-card">
+          <div class="asset-preview bg-light">
+            <img src="mascot/magnus/magnus-head-bg-invictus.svg" alt="Magnus Head — Invictus BG" />
+          </div>
+          <div class="asset-meta">
+            <div class="asset-meta-title">Head — Invictus Blue bg</div>
+            <div class="asset-meta-path">mascot/magnus/magnus-head-bg-invictus.svg</div>
+            <span class="asset-badge badge-light">Invictus bg baked in</span>
+            <span class="asset-badge badge-svg">SVG</span>
+          </div>
+        </div>
+
+        <div class="asset-card">
+          <div class="asset-preview bg-checker">
+            <img src="mascot/magnus/magnus-icon.svg" alt="Magnus Icon" />
+          </div>
+          <div class="asset-meta">
+            <div class="asset-meta-title">Icon</div>
+            <div class="asset-meta-path">mascot/magnus/magnus-icon.svg</div>
+            <span class="asset-badge badge-format">Transparent bg</span>
+            <span class="asset-badge badge-svg">SVG</span>
+          </div>
+        </div>
+
+        <div class="asset-card">
+          <div class="asset-preview bg-light">
+            <img src="mascot/magnus/magnus-icon-bg-invictus.svg" alt="Magnus Icon — Invictus BG" />
+          </div>
+          <div class="asset-meta">
+            <div class="asset-meta-title">Icon — Invictus Blue bg</div>
+            <div class="asset-meta-path">mascot/magnus/magnus-icon-bg-invictus.svg</div>
+            <span class="asset-badge badge-light">Invictus bg baked in</span>
+            <span class="asset-badge badge-svg">SVG</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================== EMBELLISHMENTS ======================== -->
+    <section id="embellishments">
+      <p class="section-label">Brand Elements</p>
+      <h2>Embellishments</h2>
+      <p style="font-size:12px;color:var(--accent);margin-bottom:20px;">Blueprint-style decorative elements for visual texture. Gray — suitable for both light and dark contexts. Shown on both below.</p>
+
+      <div class="asset-group-title" style="margin-bottom:12px;">Arc</div>
+      <div class="embellishment-pair">
+        <div class="embellishment-panel">
+          <div class="embellishment-preview bg-light">
+            <img src="assets/embellishments/embellishment-arc.svg" alt="Embellishment Arc — Light" />
+          </div>
+          <div class="embellishment-label light">On Light Background (#FDFDFD)</div>
+        </div>
+        <div class="embellishment-panel">
+          <div class="embellishment-preview bg-dark">
+            <img src="assets/embellishments/embellishment-arc.svg" alt="Embellishment Arc — Dark" />
+          </div>
+          <div class="embellishment-label dark">On Dark Background (#0A2540)</div>
+        </div>
+      </div>
+
+      <div class="asset-group-title" style="margin-bottom:12px; margin-top:24px;">Registration</div>
+      <div class="embellishment-pair">
+        <div class="embellishment-panel">
+          <div class="embellishment-preview bg-light">
+            <img src="assets/embellishments/embellishment-registration.svg" alt="Embellishment Registration — Light" />
+          </div>
+          <div class="embellishment-label light">On Light Background (#FDFDFD)</div>
+        </div>
+        <div class="embellishment-panel">
+          <div class="embellishment-preview bg-dark">
+            <img src="assets/embellishments/embellishment-registration.svg" alt="Embellishment Registration — Dark" />
+          </div>
+          <div class="embellishment-label dark">On Dark Background (#0A2540)</div>
+        </div>
+      </div>
+
+      <p style="font-size:11px;color:#9CA3AF;margin-top:16px;">Note: embellishment-web.svg and embellishment-gear.svg are referenced in brand-kit.json but files are not yet present in the repository.</p>
+    </section>
+
+    <!-- ======================== TYPOGRAPHY ======================== -->
+    <section id="typography">
+      <p class="section-label">Typography</p>
+      <h2>Goldman Sans</h2>
+      <p style="font-size:12px;color:var(--accent);margin-bottom:20px;">Goldman Sans is the sole authorized typeface for all Triumph Tech communications.</p>
+
+      <div class="type-grid">
+        <div class="type-row">
+          <div class="type-label">100 / Thin</div>
+          <div class="type-sample" style="font-weight:100;">Diligent Innovation</div>
+        </div>
+        <div class="type-row">
+          <div class="type-label">300 / Light</div>
+          <div class="type-sample" style="font-weight:300;">Diligent Innovation</div>
+        </div>
+        <div class="type-row">
+          <div class="type-label">400 / Regular</div>
+          <div class="type-sample" style="font-weight:400;">Diligent Innovation</div>
+        </div>
+        <div class="type-row">
+          <div class="type-label">400 / Italic</div>
+          <div class="type-sample" style="font-weight:400;font-style:italic;">Diligent Innovation</div>
+        </div>
+        <div class="type-row">
+          <div class="type-label">500 / Medium</div>
+          <div class="type-sample" style="font-weight:500;">Diligent Innovation</div>
+        </div>
+        <div class="type-row">
+          <div class="type-label">500 / Med Italic</div>
+          <div class="type-sample" style="font-weight:500;font-style:italic;">Diligent Innovation</div>
+        </div>
+        <div class="type-row">
+          <div class="type-label">700 / Bold</div>
+          <div class="type-sample" style="font-weight:700;">Diligent Innovation</div>
+        </div>
+        <div class="type-row">
+          <div class="type-label">700 / Bold Italic</div>
+          <div class="type-sample" style="font-weight:700;font-style:italic;">Diligent Innovation</div>
+        </div>
+        <div class="type-row">
+          <div class="type-label">900 / Black</div>
+          <div class="type-sample" style="font-weight:900;">Diligent Innovation</div>
+        </div>
+      </div>
+
+      <!-- Full alphabet -->
+      <div style="background:#fff;border-radius:8px;padding:24px;margin-top:20px;box-shadow:0 1px 3px rgba(0,0,0,0.07);">
+        <div style="font-size:11px;color:var(--accent-3);margin-bottom:12px;letter-spacing:0.05em;text-transform:uppercase;">Full Character Set — Regular 400</div>
+        <div style="font-family:'Goldman Sans',sans-serif;font-weight:400;font-size:18px;color:var(--primary);line-height:1.8;letter-spacing:0.02em;">
+          ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+          abcdefghijklmnopqrstuvwxyz<br>
+          0123456789 !@#$%&amp;*()[]{}
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== RADIUS ======================== -->
+    <section id="radius">
+      <p class="section-label">Design Tokens</p>
+      <h2>Border Radius</h2>
+
+      <div class="radius-grid">
+        <div class="radius-card">
+          <div class="radius-demo" style="border-radius:0;">
+            <div class="radius-demo-inner" style="border-radius:0;"></div>
+          </div>
+          <div class="radius-name">none</div>
+          <div class="radius-value">0px</div>
+          <div class="radius-usage">Tables, code blocks, image containers</div>
+        </div>
+        <div class="radius-card">
+          <div class="radius-demo" style="border-radius:4px;">
+            <div class="radius-demo-inner" style="border-radius:4px;"></div>
+          </div>
+          <div class="radius-name">sm</div>
+          <div class="radius-value">4px</div>
+          <div class="radius-usage">Badges, tags, input fields</div>
+        </div>
+        <div class="radius-card">
+          <div class="radius-demo" style="border-radius:8px;">
+            <div class="radius-demo-inner" style="border-radius:8px;"></div>
+          </div>
+          <div class="radius-name">md</div>
+          <div class="radius-value">8px</div>
+          <div class="radius-usage">Default — cards, buttons, modals</div>
+        </div>
+        <div class="radius-card">
+          <div class="radius-demo" style="border-radius:12px;">
+            <div class="radius-demo-inner" style="border-radius:12px;"></div>
+          </div>
+          <div class="radius-name">lg</div>
+          <div class="radius-value">12px</div>
+          <div class="radius-usage">Feature cards, callout boxes</div>
+        </div>
+        <div class="radius-card">
+          <div class="radius-demo" style="border-radius:16px;">
+            <div class="radius-demo-inner" style="border-radius:16px;"></div>
+          </div>
+          <div class="radius-name">xl</div>
+          <div class="radius-value">16px</div>
+          <div class="radius-usage">Hero sections, large cards</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="background:var(--primary);color:var(--accent-4);padding:24px 48px;font-size:11px;letter-spacing:0.04em;text-align:center;border-top:2px solid var(--secondary);">
+    Triumph Tech Brand Review &bull; brand-kit.json v2026.04 &bull; For human review only
+  </footer>
+
+</body>
+</html>

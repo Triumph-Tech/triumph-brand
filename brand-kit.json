@@ -1,68 +1,100 @@
 {
+  "version": "2026.04",
+  "base_url": "https://branding.triumph.tech",
   "brand": {
     "name": "Triumph Tech",
     "tagline": "Diligent Innovation",
-    "website": "https://triumph.tech",
-    "initiatives": {
-      "digital_revival": {
-        "name": "Digital Revival",
-        "description": "Triumph Tech's rallying cry for transformation. Conveys the mission to help churches reimagine and revitalize their digital presence with modern, impactful tools.",
-        "logos": {
-          "light": "logos/digital-revival/digital-revival-light.svg",
-          "dark": "logos/digital-revival/digital-revival-dark.svg"
-        }
+    "website": "https://triumph.tech"
+  },
+  "sub_brands": {
+    "digital_revival": {
+      "type": "campaign",
+      "name": "Digital Revival",
+      "description": "Triumph Tech's rallying cry for transformation. Conveys the mission to help churches reimagine and revitalize their digital presence with modern, impactful tools.",
+      "logos": {
+        "assets": [
+          { "variant": "light", "format": "svg",                                    "file": "logos/digital-revival/digital-revival-light.svg" },
+          { "variant": "dark",  "format": "svg",                                    "file": "logos/digital-revival/digital-revival-dark.svg" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 256,  "file": "logos/digital-revival/digital-revival-light-256.png" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 512,  "file": "logos/digital-revival/digital-revival-light-512.png" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 1024, "file": "logos/digital-revival/digital-revival-light-1024.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 256,  "file": "logos/digital-revival/digital-revival-dark-256.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 512,  "file": "logos/digital-revival/digital-revival-dark-512.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 1024, "file": "logos/digital-revival/digital-revival-dark-1024.png" }
+        ]
       }
     }
   },
-  "colors": {
-    "primary": {
-      "name": "Invictus Blue",
-      "hex": "#0A2540",
-      "rgb": "10, 37, 64",
-      "cmyk": "98, 82, 47, 51",
-      "text_on": "#FFFFFF",
-      "tones": [
-        { "hex": "#0E3258", "rgb": "14, 50, 88", "cmyk": "100, 84, 39, 32", "text_on": "#FFFFFF" },
-        { "hex": "#164371", "rgb": "22, 67, 113", "cmyk": "99, 79, 30, 16", "text_on": "#FFFFFF" },
-        { "hex": "#245B96", "rgb": "36, 91, 150", "cmyk": "92, 69, 15, 2", "text_on": "#FFFFFF" }
-      ],
-      "usage": "Main brand color"
+  "color_system": {
+    "palette": {
+      "primary": {
+        "name": "Invictus Blue",
+        "hex": "#0A2540",
+        "rgb": "10, 37, 64",
+        "cmyk": "98, 82, 47, 51",
+        "text_on": "#FFFFFF",
+        "tones": [
+          { "hex": "#0E3258", "rgb": "14, 50, 88", "cmyk": "100, 84, 39, 32", "text_on": "#FFFFFF" },
+          { "hex": "#164371", "rgb": "22, 67, 113", "cmyk": "99, 79, 30, 16", "text_on": "#FFFFFF" },
+          { "hex": "#245B96", "rgb": "36, 91, 150", "cmyk": "92, 69, 15, 2", "text_on": "#FFFFFF" }
+        ],
+        "usage": "Main brand color"
+      },
+      "secondary": {
+        "name": "Electric Blue",
+        "hex": "#4BA9DF",
+        "rgb": "75, 169, 223",
+        "cmyk": "64, 18, 0, 0",
+        "text_on": "#FFFFFF",
+        "tones": [
+          { "hex": "#3097D2", "rgb": "48, 151, 210", "cmyk": "73, 28, 0, 0", "text_on": "#FFFFFF" },
+          { "hex": "#51BAF6", "rgb": "81, 186, 246", "cmyk": "57, 11, 0, 0", "text_on": "#FFFFFF" },
+          { "hex": "#85D3FF", "rgb": "133, 211, 255", "cmyk": "41, 3, 0, 0", "text_on": "#1A1A1A" }
+        ],
+        "usage": "Secondary brand color, accents and highlights"
+      },
+      "accent": {
+        "name": "Twilight Blue",
+        "hex": "#5D758B",
+        "rgb": "93, 117, 139",
+        "cmyk": "69, 48, 33, 7",
+        "text_on": "#FFFFFF",
+        "tones": [
+          { "hex": "#425466", "rgb": "66, 84, 102", "cmyk": "77, 61, 43, 24", "text_on": "#FFFFFF" },
+          { "hex": "#97A9BA", "rgb": "151, 169, 186", "cmyk": "43, 27, 19, 0", "text_on": "#1A1A1A" },
+          { "hex": "#CFD8E3", "rgb": "207, 216, 227", "cmyk": "17, 10, 5, 0", "text_on": "#1A1A1A" }
+        ],
+        "usage": "Supporting color for backgrounds, UI elements, and neutral contrast"
+      }
     },
-    "secondary": {
-      "name": "Electric Blue",
-      "hex": "#4BA9DF",
-      "rgb": "75, 169, 223",
-      "cmyk": "64, 18, 0, 0",
-      "text_on": "#FFFFFF",
-      "tones": [
-        { "hex": "#3097D2", "rgb": "48, 151, 210", "cmyk": "73, 28, 0, 0", "text_on": "#FFFFFF" },
-        { "hex": "#51BAF6", "rgb": "81, 186, 246", "cmyk": "57, 11, 0, 0", "text_on": "#FFFFFF" },
-        { "hex": "#85D3FF", "rgb": "133, 211, 255", "cmyk": "41, 3, 0, 0", "text_on": "#1A1A1A" }
-      ],
-      "usage": "Secondary brand color, accents and highlights"
+    "interface": {
+      "description": "A seven-step neutral scale from least contrast (softest) to most contrast (strongest). Scale inverts symmetrically in dark mode — softest becomes the darkest background, strongest becomes the lightest foreground.",
+      "softest":   { "light": "#FDFDFD", "dark": "#0D1117" },
+      "softer":    { "light": "#F8F8FC", "dark": "#0A0A0A" },
+      "soft":      { "light": "#D9D9E3", "dark": "#3D444D" },
+      "medium":    { "light": "#8B8BA7", "dark": "#8B8BA7" },
+      "strong":    { "light": "#3D444D", "dark": "#D9D9E3" },
+      "stronger":  { "light": "#0D1117", "dark": "#F8F8FC" },
+      "strongest": { "light": "#0A0A0A", "dark": "#FDFDFD" }
     },
-    "accent": {
-      "name": "Twilight Blue",
-      "hex": "#5D758B",
-      "rgb": "93, 117, 139",
-      "cmyk": "69, 48, 33, 7",
-      "text_on": "#FFFFFF",
-      "tones": [
-        { "hex": "#425466", "rgb": "66, 84, 102", "cmyk": "77, 61, 43, 24", "text_on": "#FFFFFF" },
-        { "hex": "#97A9BA", "rgb": "151, 169, 186", "cmyk": "43, 27, 19, 0", "text_on": "#1A1A1A" },
-        { "hex": "#CFD8E3", "rgb": "207, 216, 227", "cmyk": "17, 10, 5, 0", "text_on": "#1A1A1A" }
-      ],
-      "usage": "Supporting color for backgrounds, UI elements, and neutral contrast"
-    },
-    "grayscale": [
-      "#FFFFFF", "#FAFAFA", "#E3E3E3", "#C2C2C2",
-      "#929292", "#595959", "#333333", "#1A1A1A"
-    ],
     "semantic": {
-      "success": { "hex": "" },
-      "warning": { "hex": "" },
-      "error": { "hex": "" },
-      "info": { "hex": "" }
+      "mode_behavior": "forecolor is the text or icon color for semantic states; background is the tinted surface behind it. Both provide light and dark mode values.",
+      "success": {
+        "forecolor":  { "light": "#01A11E", "dark": "#80D08F" },
+        "background": { "light": "#EBF7ED", "dark": "#0B2E18" }
+      },
+      "warning": {
+        "forecolor":  { "light": "#E68E16", "dark": "#F2BF72" },
+        "background": { "light": "#FBF5EB", "dark": "#382812" }
+      },
+      "danger": {
+        "forecolor":  { "light": "#D70015", "dark": "#E67782" },
+        "background": { "light": "#FAEBED", "dark": "#350E17" }
+      },
+      "info": {
+        "forecolor":  { "light": "#005DD7", "dark": "#80AEEB" },
+        "background": { "light": "#EBF2FA", "dark": "#0A203D" }
+      }
     }
   },
   "typography": {
@@ -92,38 +124,89 @@
     "xl":   { "value": "16px", "usage": "Prominent UI blocks — hero sections, large cards" }
   },
   "logos": {
-    "combination_mark": {
-      "light": "logos/primary/triumph-combination-mark-light.svg",
-      "dark": "logos/primary/triumph-combination-mark-dark.svg",
-      "usage": "Primary logo — preferred in most contexts"
+    "lockups": {
+      "combination_mark": {
+        "description": "Primary full logo — icon + wordmark (preferred in most marketing and collateral contexts)",
+        "assets": [
+          { "variant": "light", "format": "svg",                                    "file": "logos/primary/triumph-combination-mark-light.svg" },
+          { "variant": "dark",  "format": "svg",                                    "file": "logos/primary/triumph-combination-mark-dark.svg" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 256,  "file": "logos/primary/triumph-combination-mark-light-256.png" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 512,  "file": "logos/primary/triumph-combination-mark-light-512.png" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 1024, "file": "logos/primary/triumph-combination-mark-light-1024.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 256,  "file": "logos/primary/triumph-combination-mark-dark-256.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 512,  "file": "logos/primary/triumph-combination-mark-dark-512.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 1024, "file": "logos/primary/triumph-combination-mark-dark-1024.png" }
+        ]
+      },
+      "logo_mark": {
+        "description": "Icon-only submark / brandmark — for limited space, avatars, favicons, and when the full brand is already established",
+        "assets": [
+          { "variant": "light", "format": "svg",                                    "file": "logos/icon/triumph-logo-mark-light.svg" },
+          { "variant": "dark",  "format": "svg",                                    "file": "logos/icon/triumph-logo-mark-dark.svg" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 256,  "file": "logos/icon/triumph-logo-mark-light-256.png" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 512,  "file": "logos/icon/triumph-logo-mark-light-512.png" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 1024, "file": "logos/icon/triumph-logo-mark-light-1024.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 256,  "file": "logos/icon/triumph-logo-mark-dark-256.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 512,  "file": "logos/icon/triumph-logo-mark-dark-512.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 1024, "file": "logos/icon/triumph-logo-mark-dark-1024.png" }
+        ]
+      },
+      "wordmark": {
+        "description": "Text-only version",
+        "assets": [
+          { "variant": "light", "format": "svg",                                    "file": "logos/wordmark/triumph-wordmark-light.svg" },
+          { "variant": "dark",  "format": "svg",                                    "file": "logos/wordmark/triumph-wordmark-dark.svg" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 256,  "file": "logos/wordmark/triumph-wordmark-light-256.png" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 512,  "file": "logos/wordmark/triumph-wordmark-light-512.png" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 1024, "file": "logos/wordmark/triumph-wordmark-light-1024.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 256,  "file": "logos/wordmark/triumph-wordmark-dark-256.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 512,  "file": "logos/wordmark/triumph-wordmark-dark-512.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 1024, "file": "logos/wordmark/triumph-wordmark-dark-1024.png" }
+        ]
+      },
+      "avatar": {
+        "description": "Compact brand icon for use as organization avatars, profile images, partner listings, or any context where a square/round Triumph identifier is needed (e.g., Rock RMS organization pages, directories, team profiles).",
+        "usage_rules": "Prefer transparent PNG for flexibility. Use a background variant when the platform requires it. Maintain circular crop where the platform requires it.",
+        "assets": [
+          { "variant": "light", "format": "svg",                                              "file": "logos/icon/triumph-logo-mark-light.svg" },
+          { "variant": "dark",  "format": "svg",                                              "file": "logos/icon/triumph-logo-mark-dark.svg" },
+          { "variant": "light", "format": "png", "background": "transparent",     "size": 256,  "file": "logos/avatar/triumph-avatar-light-transparent-256.png" },
+          { "variant": "light", "format": "png", "background": "transparent",     "size": 512,  "file": "logos/avatar/triumph-avatar-light-transparent-512.png" },
+          { "variant": "light", "format": "png", "background": "transparent",     "size": 1024, "file": "logos/avatar/triumph-avatar-light-transparent-1024.png" },
+          { "variant": "light", "format": "png", "background": "color_system.palette.primary",         "size": 256,  "file": "logos/avatar/triumph-avatar-light-primary-256.png" },
+          { "variant": "light", "format": "png", "background": "color_system.palette.primary",         "size": 512,  "file": "logos/avatar/triumph-avatar-light-primary-512.png" },
+          { "variant": "light", "format": "png", "background": "color_system.palette.primary",         "size": 1024, "file": "logos/avatar/triumph-avatar-light-primary-1024.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent",     "size": 256,  "file": "logos/avatar/triumph-avatar-dark-transparent-256.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent",     "size": 512,  "file": "logos/avatar/triumph-avatar-dark-transparent-512.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent",     "size": 1024, "file": "logos/avatar/triumph-avatar-dark-transparent-1024.png" },
+          { "variant": "dark",  "format": "png", "background": "interface.softest", "size": 256,  "file": "logos/avatar/triumph-avatar-dark-softest-256.png" },
+          { "variant": "dark",  "format": "png", "background": "interface.softest", "size": 512,  "file": "logos/avatar/triumph-avatar-dark-softest-512.png" },
+          { "variant": "dark",  "format": "png", "background": "interface.softest", "size": 1024, "file": "logos/avatar/triumph-avatar-dark-softest-1024.png" }
+        ]
+      }
     },
-    "logo_mark": {
-      "file": "logos/icon/triumph-logo-mark.svg",
-      "usage": "Icon only — use when space is limited or brand is already established in context"
-    },
-    "wordmark": {
-      "light": "logos/wordmark/triumph-wordmark-light.svg",
-      "dark": "logos/wordmark/triumph-wordmark-dark.svg"
-    },
-    "digital_revival": {
-      "light": "logos/digital-revival/digital-revival-light.svg",
-      "dark": "logos/digital-revival/digital-revival-dark.svg"
-    },
-    "clearspace": "Maintain clear space equal to the height of the logo mark on all sides.",
-    "backgrounds": {
-      "approved": ["white", "#0A2540", "#0E3258"],
-      "avoid": "Do not place the logo on busy backgrounds or unapproved colors."
-    }
+    "rules": [
+      "Always prefer the combination_mark as the primary logo whenever space and context allow.",
+      "Use the logo_mark (icon-only) for avatars, favicons, small spaces, or when the full brand is already established in context.",
+      "Maintain clear space equal to the height of the logo mark on all sides for every logo usage.",
+      "Approved backgrounds for logos: white, #0A2540 (Invictus Blue), #0E3258. Avoid busy, patterned, or unapproved backgrounds.",
+      "Prefer SVG files for all vector work and programmatic generation by agents; use the provided PNGs only for raster needs or quick placement.",
+      "Do not alter, stretch, recolor (except using the provided light/dark variants), add effects, or distort any logo.",
+      "For organization avatar pages (e.g., Rock RMS), use the brand avatar PNGs at 512×512 px with transparent background where possible."
+    ]
   },
-  "mascot": {
-    "name": "Magnus",
-    "description": "Magnus is a cheeky robot whose only job is to assist the Triumph team in their mission to empower and serve the Rock community.",
-    "assets": {
-      "full_body": "mascot/magnus/magnus-full-body.svg",
-      "head": "mascot/magnus/magnus-head.svg",
-      "head_bg_invictus": "mascot/magnus/magnus-head-bg-invictus.svg",
-      "icon": "mascot/magnus/magnus-icon.svg",
-      "icon_bg_invictus": "mascot/magnus/magnus-icon-bg-invictus.svg"
+  "personas": {
+    "magnus": {
+      "type": "mascot",
+      "name": "Magnus",
+      "description": "Magnus is a cheeky robot whose only job is to assist the Triumph team in their mission to empower and serve the Rock community.",
+      "assets": [
+        { "variant": "full_body", "format": "svg",                           "file": "mascot/magnus/magnus-full-body.svg" },
+        { "variant": "head",      "format": "svg",                           "file": "mascot/magnus/magnus-head.svg" },
+        { "variant": "head",      "format": "svg", "background": "color_system.palette.primary", "file": "mascot/magnus/magnus-head-bg-invictus.svg" },
+        { "variant": "icon",      "format": "svg",                           "file": "mascot/magnus/magnus-icon.svg" },
+        { "variant": "icon",      "format": "svg", "background": "color_system.palette.primary", "file": "mascot/magnus/magnus-icon-bg-invictus.svg" }
+      ]
     }
   },
   "voice": {
@@ -132,17 +215,51 @@
     "avoid": [],
     "example_phrases": []
   },
-  "usage": {
-    "dos": [],
-    "donts": []
-  },
   "brand_elements": {
+    "embellishments": {
+      "description": "Blueprint-style decorative elements used to add visual texture and brand character to layouts. Gray — suitable for both light and dark contexts.",
+      "assets": [
+        { "name": "web",          "format": "svg",                    "file": "assets/embellishments/embellishment-web.svg" },
+        { "name": "web",          "format": "png", "size": 256,       "file": "assets/embellishments/embellishment-web-256.png" },
+        { "name": "web",          "format": "png", "size": 512,       "file": "assets/embellishments/embellishment-web-512.png" },
+        { "name": "web",          "format": "png", "size": 1024,      "file": "assets/embellishments/embellishment-web-1024.png" },
+        { "name": "arc",          "format": "svg",                    "file": "assets/embellishments/embellishment-arc.svg" },
+        { "name": "arc",          "format": "png", "size": 256,       "file": "assets/embellishments/embellishment-arc-256.png" },
+        { "name": "arc",          "format": "png", "size": 512,       "file": "assets/embellishments/embellishment-arc-512.png" },
+        { "name": "arc",          "format": "png", "size": 1024,      "file": "assets/embellishments/embellishment-arc-1024.png" },
+        { "name": "registration", "format": "svg",                    "file": "assets/embellishments/embellishment-registration.svg" },
+        { "name": "registration", "format": "png", "size": 256,       "file": "assets/embellishments/embellishment-registration-256.png" },
+        { "name": "registration", "format": "png", "size": 512,       "file": "assets/embellishments/embellishment-registration-512.png" },
+        { "name": "registration", "format": "png", "size": 1024,      "file": "assets/embellishments/embellishment-registration-1024.png" },
+        { "name": "gear",         "format": "svg",                    "file": "assets/embellishments/embellishment-gear.svg" },
+        { "name": "gear",         "format": "png", "size": 256,       "file": "assets/embellishments/embellishment-gear-256.png" },
+        { "name": "gear",         "format": "png", "size": 512,       "file": "assets/embellishments/embellishment-gear-512.png" },
+        { "name": "gear",         "format": "png", "size": 1024,      "file": "assets/embellishments/embellishment-gear-1024.png" }
+      ]
+    },
     "image_wash": {
-      "description": "A branded image effect for subtle image backgrounds in graphic applications.",
+      "description": "A branded image effect for subtle image backgrounds in graphic applications. Apply to any photo used as a background to maintain visual consistency.",
       "layers": [
         {
+          "order": 1,
           "type": "image",
-          "saturation": "0%",
+          "adjustment": "desaturate",
+          "saturation": "0%"
+        },
+        {
+          "order": 2,
+          "type": "color_overlay",
+          "color": "color_system.palette.primary.hex",
           "opacity": "15%",
           "blend_mode": "Luminosity"
- 
+        }
+      ]
+    }
+  },
+  "rules": [
+    "This brand-kit.json is the single source of truth. AI agents must load and strictly follow these paths, colors, rules, and assets.",
+    "All typography must use Goldman Sans exclusively — no other fonts are authorized.",
+    "Apply the image_wash technique (desaturate to 0%, 15% opacity Invictus Blue layer with Luminosity blend mode) for consistent branded background images.",
+    "Persona assets (e.g., Magnus) may be used as a secondary/fun variant in internal or playful contexts only — never as a replacement for the official brand logos."
+  ]
+}
