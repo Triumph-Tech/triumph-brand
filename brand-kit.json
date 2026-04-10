@@ -84,6 +84,13 @@
       "note": "Goldman Sans is the sole authorized typeface for all Triumph Tech communications."
     }
   },
+  "radius": {
+    "none": { "value": "0px",  "usage": "Hard-edged elements — tables, code blocks, image containers" },
+    "sm":   { "value": "4px",  "usage": "Small UI elements — badges, tags, input fields" },
+    "md":   { "value": "8px",  "usage": "Default — cards, buttons, modals, panels" },
+    "lg":   { "value": "12px", "usage": "Larger containers — feature cards, callout boxes" },
+    "xl":   { "value": "16px", "usage": "Prominent UI blocks — hero sections, large cards" }
+  },
   "logos": {
     "combination_mark": {
       "light": "logos/primary/triumph-combination-mark-light.svg",

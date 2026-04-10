@@ -77,7 +77,7 @@
     }
 
     .logo-mark img {
-      height: 36px;
+      height: 26px;
       width: auto;
       display: block;
     }
@@ -97,6 +97,24 @@
       color: var(--electric-blue);
       letter-spacing: 0.08em;
       text-transform: uppercase;
+    }
+
+    .download-link {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--electric-blue);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      border: 1px solid var(--invictus-blue-4);
+      padding: 6px 14px;
+      border-radius: 4px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .download-link:hover {
+      background: var(--electric-blue);
+      color: var(--white);
+      border-color: var(--electric-blue);
     }
 
     /* HERO */
@@ -375,7 +393,10 @@
       <div class="logo-mark"><img src="logos/primary/triumph-combination-mark-dark.svg" alt="Triumph" /></div>
       <span class="logo-text">triumph</span>
     </div>
-    <span class="header-label">Brand Kit</span>
+    <div style="display: flex; gap: 10px; align-items: center;">
+      <a class="download-link" href="https://github.com/Triumph-Tech/triumph-brand" target="_blank">GitHub Repo</a>
+      <a class="download-link" href="https://github.com/Triumph-Tech/triumph-brand/archive/refs/heads/main.zip" download>Download ZIP</a>
+    </div>
   </header>
 
   <div class="hero">
