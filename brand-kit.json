@@ -6,25 +6,157 @@
     "tagline": "Diligent Innovation",
     "website": "https://triumph.tech"
   },
-  "sub_brands": {
-    "digital_revival": {
+  "locations": [
+    {
+      "type": "mailing-address",
+      "street": "24654 N Lake Pleasant Pkwy Ste 103-192",
+      "city": "Peoria",
+      "state": "AZ",
+      "zip": "85383",
+      "country": "US",
+      "lat": 33.707668,
+      "lng": -112.273165
+    },
+    {
+      "type": "office-address",
+      "street": "11340 W Bell Rd Ste 200",
+      "city": "Surprise",
+      "state": "AZ",
+      "zip": "85378",
+      "country": "US",
+      "lat": 33.639946,
+      "lng": -112.30385
+    }
+  ],
+  "sub_brands": [
+    {
+      "id": "digital_revival",
       "type": "campaign",
       "name": "Digital Revival",
       "description": "Triumph Tech's rallying cry for transformation. Conveys the mission to help churches reimagine and revitalize their digital presence with modern, impactful tools.",
       "logos": {
         "assets": [
-          { "variant": "light", "format": "svg",                                    "file": "logos/digital-revival/digital-revival-light.svg" },
-          { "variant": "dark",  "format": "svg",                                    "file": "logos/digital-revival/digital-revival-dark.svg" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 256,  "file": "logos/digital-revival/digital-revival-light-256.png" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 512,  "file": "logos/digital-revival/digital-revival-light-512.png" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 1024, "file": "logos/digital-revival/digital-revival-light-1024.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 256,  "file": "logos/digital-revival/digital-revival-dark-256.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 512,  "file": "logos/digital-revival/digital-revival-dark-512.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 1024, "file": "logos/digital-revival/digital-revival-dark-1024.png" }
+          {
+            "variant": "light",
+            "format": "svg",
+            "file": "sub-brands/digital-revival/digital-revival-light.svg"
+          },
+          {
+            "variant": "dark",
+            "format": "svg",
+            "file": "sub-brands/digital-revival/digital-revival-dark.svg"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "transparent",
+            "size": 256,
+            "file": "sub-brands/digital-revival/digital-revival-light-256.png"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "transparent",
+            "size": 512,
+            "file": "sub-brands/digital-revival/digital-revival-light-512.png"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "transparent",
+            "size": 1024,
+            "file": "sub-brands/digital-revival/digital-revival-light-1024.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "transparent",
+            "size": 256,
+            "file": "sub-brands/digital-revival/digital-revival-dark-256.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "transparent",
+            "size": 512,
+            "file": "sub-brands/digital-revival/digital-revival-dark-512.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "transparent",
+            "size": 1024,
+            "file": "sub-brands/digital-revival/digital-revival-dark-1024.png"
+          }
         ]
       }
+    },
+    {
+      "id": "rock_cloud",
+      "type": "product",
+      "name": "Rock Cloud",
+      "tagline": "The Premiere Cloud Hosting Platform for Rock",
+      "sub_tag": "Managed by the highest-rated partner in the Rock community. Trusted by the leading Rock churches.",
+      "website": "https://www.rockcloud.com/",
+      "logos": {
+        "assets": [
+          {
+            "variant": "light",
+            "format": "svg",
+            "file": "sub-brands/rock-cloud/rock-cloud-light.svg"
+          },
+          {
+            "variant": "dark",
+            "format": "svg",
+            "file": "sub-brands/rock-cloud/rock-cloud-dark.svg"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "transparent",
+            "size": 256,
+            "file": "sub-brands/rock-cloud/rock-cloud-light-256.png"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "transparent",
+            "size": 512,
+            "file": "sub-brands/rock-cloud/rock-cloud-light-512.png"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "transparent",
+            "size": 1024,
+            "file": "sub-brands/rock-cloud/rock-cloud-light-1024.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "transparent",
+            "size": 256,
+            "file": "sub-brands/rock-cloud/rock-cloud-dark-256.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "transparent",
+            "size": 512,
+            "file": "sub-brands/rock-cloud/rock-cloud-dark-512.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "transparent",
+            "size": 1024,
+            "file": "sub-brands/rock-cloud/rock-cloud-dark-1024.png"
+          }
+        ]
+      },
+      "description": "Triumph Tech's fully hosted Rock RMS platform — a managed, enterprise-grade cloud hosting solution purpose-built for Rock."
     }
-  },
+  ],
   "color_system": {
     "palette": {
       "primary": {
@@ -34,9 +166,24 @@
         "cmyk": "98, 82, 47, 51",
         "text_on": "#FFFFFF",
         "tones": [
-          { "hex": "#0E3258", "rgb": "14, 50, 88", "cmyk": "100, 84, 39, 32", "text_on": "#FFFFFF" },
-          { "hex": "#164371", "rgb": "22, 67, 113", "cmyk": "99, 79, 30, 16", "text_on": "#FFFFFF" },
-          { "hex": "#245B96", "rgb": "36, 91, 150", "cmyk": "92, 69, 15, 2", "text_on": "#FFFFFF" }
+          {
+            "hex": "#0E3258",
+            "rgb": "14, 50, 88",
+            "cmyk": "100, 84, 39, 32",
+            "text_on": "#FFFFFF"
+          },
+          {
+            "hex": "#164371",
+            "rgb": "22, 67, 113",
+            "cmyk": "99, 79, 30, 16",
+            "text_on": "#FFFFFF"
+          },
+          {
+            "hex": "#245B96",
+            "rgb": "36, 91, 150",
+            "cmyk": "92, 69, 15, 2",
+            "text_on": "#FFFFFF"
+          }
         ],
         "usage": "Main brand color"
       },
@@ -47,9 +194,24 @@
         "cmyk": "64, 18, 0, 0",
         "text_on": "#FFFFFF",
         "tones": [
-          { "hex": "#3097D2", "rgb": "48, 151, 210", "cmyk": "73, 28, 0, 0", "text_on": "#FFFFFF" },
-          { "hex": "#51BAF6", "rgb": "81, 186, 246", "cmyk": "57, 11, 0, 0", "text_on": "#FFFFFF" },
-          { "hex": "#85D3FF", "rgb": "133, 211, 255", "cmyk": "41, 3, 0, 0", "text_on": "#1A1A1A" }
+          {
+            "hex": "#3097D2",
+            "rgb": "48, 151, 210",
+            "cmyk": "73, 28, 0, 0",
+            "text_on": "#FFFFFF"
+          },
+          {
+            "hex": "#51BAF6",
+            "rgb": "81, 186, 246",
+            "cmyk": "57, 11, 0, 0",
+            "text_on": "#FFFFFF"
+          },
+          {
+            "hex": "#85D3FF",
+            "rgb": "133, 211, 255",
+            "cmyk": "41, 3, 0, 0",
+            "text_on": "#1A1A1A"
+          }
         ],
         "usage": "Secondary brand color, accents and highlights"
       },
@@ -60,40 +222,100 @@
         "cmyk": "69, 48, 33, 7",
         "text_on": "#FFFFFF",
         "tones": [
-          { "hex": "#425466", "rgb": "66, 84, 102", "cmyk": "77, 61, 43, 24", "text_on": "#FFFFFF" },
-          { "hex": "#97A9BA", "rgb": "151, 169, 186", "cmyk": "43, 27, 19, 0", "text_on": "#1A1A1A" },
-          { "hex": "#CFD8E3", "rgb": "207, 216, 227", "cmyk": "17, 10, 5, 0", "text_on": "#1A1A1A" }
+          {
+            "hex": "#425466",
+            "rgb": "66, 84, 102",
+            "cmyk": "77, 61, 43, 24",
+            "text_on": "#FFFFFF"
+          },
+          {
+            "hex": "#97A9BA",
+            "rgb": "151, 169, 186",
+            "cmyk": "43, 27, 19, 0",
+            "text_on": "#1A1A1A"
+          },
+          {
+            "hex": "#CFD8E3",
+            "rgb": "207, 216, 227",
+            "cmyk": "17, 10, 5, 0",
+            "text_on": "#1A1A1A"
+          }
         ],
         "usage": "Supporting color for backgrounds, UI elements, and neutral contrast"
       }
     },
     "interface": {
       "description": "A seven-step neutral scale from least contrast (softest) to most contrast (strongest). Scale inverts symmetrically in dark mode — softest becomes the darkest background, strongest becomes the lightest foreground.",
-      "softest":   { "light": "#FDFDFD", "dark": "#0D1117" },
-      "softer":    { "light": "#F8F8FC", "dark": "#0A0A0A" },
-      "soft":      { "light": "#D9D9E3", "dark": "#3D444D" },
-      "medium":    { "light": "#8B8BA7", "dark": "#8B8BA7" },
-      "strong":    { "light": "#3D444D", "dark": "#D9D9E3" },
-      "stronger":  { "light": "#0D1117", "dark": "#F8F8FC" },
-      "strongest": { "light": "#0A0A0A", "dark": "#FDFDFD" }
+      "softest": {
+        "light": "#FDFDFD",
+        "dark": "#0D1117"
+      },
+      "softer": {
+        "light": "#F8F8FC",
+        "dark": "#0A0A0A"
+      },
+      "soft": {
+        "light": "#D9D9E3",
+        "dark": "#3D444D"
+      },
+      "medium": {
+        "light": "#8B8BA7",
+        "dark": "#8B8BA7"
+      },
+      "strong": {
+        "light": "#3D444D",
+        "dark": "#D9D9E3"
+      },
+      "stronger": {
+        "light": "#0D1117",
+        "dark": "#F8F8FC"
+      },
+      "strongest": {
+        "light": "#0A0A0A",
+        "dark": "#FDFDFD"
+      }
     },
     "semantic": {
       "mode_behavior": "forecolor is the text or icon color for semantic states; background is the tinted surface behind it. Both provide light and dark mode values.",
       "success": {
-        "forecolor":  { "light": "#01A11E", "dark": "#80D08F" },
-        "background": { "light": "#EBF7ED", "dark": "#0B2E18" }
+        "forecolor": {
+          "light": "#01A11E",
+          "dark": "#80D08F"
+        },
+        "background": {
+          "light": "#EBF7ED",
+          "dark": "#0B2E18"
+        }
       },
       "warning": {
-        "forecolor":  { "light": "#E68E16", "dark": "#F2BF72" },
-        "background": { "light": "#FBF5EB", "dark": "#382812" }
+        "forecolor": {
+          "light": "#E68E16",
+          "dark": "#F2BF72"
+        },
+        "background": {
+          "light": "#FBF5EB",
+          "dark": "#382812"
+        }
       },
       "danger": {
-        "forecolor":  { "light": "#D70015", "dark": "#E67782" },
-        "background": { "light": "#FAEBED", "dark": "#350E17" }
+        "forecolor": {
+          "light": "#D70015",
+          "dark": "#E67782"
+        },
+        "background": {
+          "light": "#FAEBED",
+          "dark": "#350E17"
+        }
       },
       "info": {
-        "forecolor":  { "light": "#005DD7", "dark": "#80AEEB" },
-        "background": { "light": "#EBF2FA", "dark": "#0A203D" }
+        "forecolor": {
+          "light": "#005DD7",
+          "dark": "#80AEEB"
+        },
+        "background": {
+          "light": "#EBF2FA",
+          "dark": "#0A203D"
+        }
       }
     }
   },
@@ -117,71 +339,284 @@
     }
   },
   "radius": {
-    "none": { "value": "0px",  "usage": "Hard-edged elements — tables, code blocks, image containers" },
-    "sm":   { "value": "4px",  "usage": "Small UI elements — badges, tags, input fields" },
-    "md":   { "value": "8px",  "usage": "Default — cards, buttons, modals, panels" },
-    "lg":   { "value": "12px", "usage": "Larger containers — feature cards, callout boxes" },
-    "xl":   { "value": "16px", "usage": "Prominent UI blocks — hero sections, large cards" }
+    "none": {
+      "value": "0px",
+      "usage": "Hard-edged elements — tables, code blocks, image containers"
+    },
+    "sm": {
+      "value": "4px",
+      "usage": "Small UI elements — badges, tags, input fields"
+    },
+    "md": {
+      "value": "8px",
+      "usage": "Default — cards, buttons, modals, panels"
+    },
+    "lg": {
+      "value": "12px",
+      "usage": "Larger containers — feature cards, callout boxes"
+    },
+    "xl": {
+      "value": "16px",
+      "usage": "Prominent UI blocks — hero sections, large cards"
+    }
   },
   "logos": {
-    "lockups": {
-      "combination_mark": {
+    "lockups": [
+      {
+        "type": "combination_mark",
         "description": "Primary full logo — icon + wordmark (preferred in most marketing and collateral contexts)",
         "assets": [
-          { "variant": "light", "format": "svg",                                    "file": "logos/combination-mark/triumph-combination-mark-light.svg" },
-          { "variant": "dark",  "format": "svg",                                    "file": "logos/combination-mark/triumph-combination-mark-dark.svg" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 256,  "file": "logos/combination-mark/triumph-combination-mark-light-256.png" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 512,  "file": "logos/combination-mark/triumph-combination-mark-light-512.png" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 1024, "file": "logos/combination-mark/triumph-combination-mark-light-1024.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 256,  "file": "logos/combination-mark/triumph-combination-mark-dark-256.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 512,  "file": "logos/combination-mark/triumph-combination-mark-dark-512.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 1024, "file": "logos/combination-mark/triumph-combination-mark-dark-1024.png" }
+          {
+            "variant": "light",
+            "format": "svg",
+            "file": "logos/combination-mark/triumph-combination-mark-light.svg"
+          },
+          {
+            "variant": "dark",
+            "format": "svg",
+            "file": "logos/combination-mark/triumph-combination-mark-dark.svg"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "transparent",
+            "size": 256,
+            "file": "logos/combination-mark/triumph-combination-mark-light-256.png"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "transparent",
+            "size": 512,
+            "file": "logos/combination-mark/triumph-combination-mark-light-512.png"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "transparent",
+            "size": 1024,
+            "file": "logos/combination-mark/triumph-combination-mark-light-1024.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "transparent",
+            "size": 256,
+            "file": "logos/combination-mark/triumph-combination-mark-dark-256.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "transparent",
+            "size": 512,
+            "file": "logos/combination-mark/triumph-combination-mark-dark-512.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "transparent",
+            "size": 1024,
+            "file": "logos/combination-mark/triumph-combination-mark-dark-1024.png"
+          }
         ]
       },
-      "logo_mark": {
+      {
+        "type": "logo_mark",
         "description": "Icon-only submark / brandmark — for limited space, avatars, favicons, and when the full brand is already established",
         "assets": [
-          { "variant": "light", "format": "svg",                                    "file": "logos/logo-mark/triumph-logo-mark-light.svg" },
-          { "variant": "dark",  "format": "svg",                                    "file": "logos/logo-mark/triumph-logo-mark-dark.svg" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 256,  "file": "logos/logo-mark/triumph-logo-mark-light-256.png" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 512,  "file": "logos/logo-mark/triumph-logo-mark-light-512.png" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 1024, "file": "logos/logo-mark/triumph-logo-mark-light-1024.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 256,  "file": "logos/logo-mark/triumph-logo-mark-dark-256.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 512,  "file": "logos/logo-mark/triumph-logo-mark-dark-512.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 1024, "file": "logos/logo-mark/triumph-logo-mark-dark-1024.png" }
+          {
+            "variant": "light",
+            "format": "svg",
+            "file": "logos/logo-mark/triumph-logo-mark-light.svg"
+          },
+          {
+            "variant": "dark",
+            "format": "svg",
+            "file": "logos/logo-mark/triumph-logo-mark-dark.svg"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "transparent",
+            "size": 256,
+            "file": "logos/logo-mark/triumph-logo-mark-light-256.png"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "transparent",
+            "size": 512,
+            "file": "logos/logo-mark/triumph-logo-mark-light-512.png"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "transparent",
+            "size": 1024,
+            "file": "logos/logo-mark/triumph-logo-mark-light-1024.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "transparent",
+            "size": 256,
+            "file": "logos/logo-mark/triumph-logo-mark-dark-256.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "transparent",
+            "size": 512,
+            "file": "logos/logo-mark/triumph-logo-mark-dark-512.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "transparent",
+            "size": 1024,
+            "file": "logos/logo-mark/triumph-logo-mark-dark-1024.png"
+          }
         ]
       },
-      "wordmark": {
+      {
+        "type": "wordmark",
         "description": "Text-only version",
         "assets": [
-          { "variant": "light", "format": "svg",                                    "file": "logos/wordmark/triumph-wordmark-light.svg" },
-          { "variant": "dark",  "format": "svg",                                    "file": "logos/wordmark/triumph-wordmark-dark.svg" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 256,  "file": "logos/wordmark/triumph-wordmark-light-256.png" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 512,  "file": "logos/wordmark/triumph-wordmark-light-512.png" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 1024, "file": "logos/wordmark/triumph-wordmark-light-1024.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 256,  "file": "logos/wordmark/triumph-wordmark-dark-256.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 512,  "file": "logos/wordmark/triumph-wordmark-dark-512.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 1024, "file": "logos/wordmark/triumph-wordmark-dark-1024.png" }
+          {
+            "variant": "light",
+            "format": "svg",
+            "file": "logos/wordmark/triumph-wordmark-light.svg"
+          },
+          {
+            "variant": "dark",
+            "format": "svg",
+            "file": "logos/wordmark/triumph-wordmark-dark.svg"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "transparent",
+            "size": 256,
+            "file": "logos/wordmark/triumph-wordmark-light-256.png"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "transparent",
+            "size": 512,
+            "file": "logos/wordmark/triumph-wordmark-light-512.png"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "transparent",
+            "size": 1024,
+            "file": "logos/wordmark/triumph-wordmark-light-1024.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "transparent",
+            "size": 256,
+            "file": "logos/wordmark/triumph-wordmark-dark-256.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "transparent",
+            "size": 512,
+            "file": "logos/wordmark/triumph-wordmark-dark-512.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "transparent",
+            "size": 1024,
+            "file": "logos/wordmark/triumph-wordmark-dark-1024.png"
+          }
         ]
       },
-      "avatar": {
+      {
+        "type": "avatar",
         "description": "Compact brand icon for use as organization avatars, profile images, partner listings, or any context where a square/round Triumph identifier is needed (e.g., Rock RMS organization pages, directories, team profiles).",
         "usage_rules": "Prefer transparent PNG for flexibility. Use a background variant when the platform requires it. Maintain circular crop where the platform requires it.",
         "assets": [
-          { "variant": "light", "format": "svg",                                                                    "file": "logos/avatar/triumph-avatar-light.svg" },
-          { "variant": "dark",  "format": "svg",                                                                    "file": "logos/avatar/triumph-avatar-dark.svg" },
-          { "format": "png", "background": "transparent",                         "size": 256,  "file": "logos/avatar/triumph-avatar-transparent-256.png" },
-          { "format": "png", "background": "transparent",                         "size": 512,  "file": "logos/avatar/triumph-avatar-transparent-512.png" },
-          { "format": "png", "background": "transparent",                         "size": 1024, "file": "logos/avatar/triumph-avatar-transparent-1024.png" },
-          { "variant": "light", "format": "png", "background": "color_system.palette.primary",        "size": 256,  "file": "logos/avatar/triumph-avatar-light-256.png" },
-          { "variant": "light", "format": "png", "background": "color_system.palette.primary",        "size": 512,  "file": "logos/avatar/triumph-avatar-light-512.png" },
-          { "variant": "light", "format": "png", "background": "color_system.palette.primary",        "size": 1024, "file": "logos/avatar/triumph-avatar-light-1024.png" },
-          { "variant": "dark",  "format": "png", "background": "interface.softest",                   "size": 256,  "file": "logos/avatar/triumph-avatar-dark-256.png" },
-          { "variant": "dark",  "format": "png", "background": "interface.softest",                   "size": 512,  "file": "logos/avatar/triumph-avatar-dark-512.png" },
-          { "variant": "dark",  "format": "png", "background": "interface.softest",                   "size": 1024, "file": "logos/avatar/triumph-avatar-dark-1024.png" }
+          {
+            "variant": "light",
+            "format": "svg",
+            "file": "logos/avatar/triumph-avatar-light.svg"
+          },
+          {
+            "variant": "dark",
+            "format": "svg",
+            "file": "logos/avatar/triumph-avatar-dark.svg"
+          },
+          {
+            "format": "png",
+            "background": "transparent",
+            "size": 256,
+            "file": "logos/avatar/triumph-avatar-transparent-256.png",
+            "variant": "transparent"
+          },
+          {
+            "format": "png",
+            "background": "transparent",
+            "size": 512,
+            "file": "logos/avatar/triumph-avatar-transparent-512.png",
+            "variant": "transparent"
+          },
+          {
+            "format": "png",
+            "background": "transparent",
+            "size": 1024,
+            "file": "logos/avatar/triumph-avatar-transparent-1024.png",
+            "variant": "transparent"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "color_system.palette.primary",
+            "size": 256,
+            "file": "logos/avatar/triumph-avatar-light-256.png"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "color_system.palette.primary",
+            "size": 512,
+            "file": "logos/avatar/triumph-avatar-light-512.png"
+          },
+          {
+            "variant": "light",
+            "format": "png",
+            "background": "color_system.palette.primary",
+            "size": 1024,
+            "file": "logos/avatar/triumph-avatar-light-1024.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "interface.softest",
+            "size": 256,
+            "file": "logos/avatar/triumph-avatar-dark-256.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "interface.softest",
+            "size": 512,
+            "file": "logos/avatar/triumph-avatar-dark-512.png"
+          },
+          {
+            "variant": "dark",
+            "format": "png",
+            "background": "interface.softest",
+            "size": 1024,
+            "file": "logos/avatar/triumph-avatar-dark-1024.png"
+          }
         ]
       }
-    },
+    ],
     "rules": [
       "Always prefer the combination_mark as the primary logo whenever space and context allow.",
       "Use the logo_mark (icon-only) for avatars, favicons, small spaces, or when the full brand is already established in context.",
@@ -194,7 +629,14 @@
   },
   "voice": {
     "summary": "Clear, confident, and warm. Professional but approachable. Solution-focused with a heart for service. Avoid jargon, hype, and cold corporate language.",
-    "tone": ["innovative", "professional", "approachable", "warm", "collaborative", "solution-focused"],
+    "tone": [
+      "innovative",
+      "professional",
+      "approachable",
+      "warm",
+      "collaborative",
+      "solution-focused"
+    ],
     "avoid": [],
     "example_phrases": []
   },
@@ -202,37 +644,99 @@
     "embellishments": {
       "description": "Blueprint-style decorative elements used to add visual texture and brand character to layouts. Gray — suitable for both light and dark contexts.",
       "assets": [
-        { "name": "web",          "format": "svg",                    "file": "assets/embellishments/embellishment-web.svg" },
-        { "name": "web",          "format": "png", "size": 256,       "file": "assets/embellishments/embellishment-web-256.png" },
-        { "name": "web",          "format": "png", "size": 512,       "file": "assets/embellishments/embellishment-web-512.png" },
-        { "name": "web",          "format": "png", "size": 1024,      "file": "assets/embellishments/embellishment-web-1024.png" },
-        { "name": "arc",          "format": "svg",                    "file": "assets/embellishments/embellishment-arc.svg" },
-        { "name": "arc",          "format": "png", "size": 256,       "file": "assets/embellishments/embellishment-arc-256.png" },
-        { "name": "arc",          "format": "png", "size": 512,       "file": "assets/embellishments/embellishment-arc-512.png" },
-        { "name": "arc",          "format": "png", "size": 1024,      "file": "assets/embellishments/embellishment-arc-1024.png" },
-        { "name": "registration", "format": "svg",                    "file": "assets/embellishments/embellishment-registration.svg" },
-        { "name": "registration", "format": "png", "size": 256,       "file": "assets/embellishments/embellishment-registration-256.png" },
-        { "name": "registration", "format": "png", "size": 512,       "file": "assets/embellishments/embellishment-registration-512.png" },
-        { "name": "registration", "format": "png", "size": 1024,      "file": "assets/embellishments/embellishment-registration-1024.png" },
-        { "name": "gear",         "format": "svg",                    "file": "assets/embellishments/embellishment-gear.svg" },
-        { "name": "gear",         "format": "png", "size": 256,       "file": "assets/embellishments/embellishment-gear-256.png" },
-        { "name": "gear",         "format": "png", "size": 512,       "file": "assets/embellishments/embellishment-gear-512.png" },
-        { "name": "gear",         "format": "png", "size": 1024,      "file": "assets/embellishments/embellishment-gear-1024.png" }
+        {
+          "name": "web",
+          "format": "svg",
+          "file": "assets/embellishments/embellishment-web.svg"
+        },
+        {
+          "name": "web",
+          "format": "png",
+          "size": 256,
+          "file": "assets/embellishments/embellishment-web-256.png"
+        },
+        {
+          "name": "web",
+          "format": "png",
+          "size": 512,
+          "file": "assets/embellishments/embellishment-web-512.png"
+        },
+        {
+          "name": "web",
+          "format": "png",
+          "size": 1024,
+          "file": "assets/embellishments/embellishment-web-1024.png"
+        },
+        {
+          "name": "arc",
+          "format": "svg",
+          "file": "assets/embellishments/embellishment-arc.svg"
+        },
+        {
+          "name": "arc",
+          "format": "png",
+          "size": 256,
+          "file": "assets/embellishments/embellishment-arc-256.png"
+        },
+        {
+          "name": "arc",
+          "format": "png",
+          "size": 512,
+          "file": "assets/embellishments/embellishment-arc-512.png"
+        },
+        {
+          "name": "arc",
+          "format": "png",
+          "size": 1024,
+          "file": "assets/embellishments/embellishment-arc-1024.png"
+        },
+        {
+          "name": "registration",
+          "format": "svg",
+          "file": "assets/embellishments/embellishment-registration.svg"
+        },
+        {
+          "name": "registration",
+          "format": "png",
+          "size": 256,
+          "file": "assets/embellishments/embellishment-registration-256.png"
+        },
+        {
+          "name": "registration",
+          "format": "png",
+          "size": 512,
+          "file": "assets/embellishments/embellishment-registration-512.png"
+        },
+        {
+          "name": "registration",
+          "format": "png",
+          "size": 1024,
+          "file": "assets/embellishments/embellishment-registration-1024.png"
+        },
+        {
+          "name": "gear",
+          "format": "svg",
+          "file": "assets/embellishments/embellishment-gear.svg"
+        },
+        {
+          "name": "gear",
+          "format": "png",
+          "size": 256,
+          "file": "assets/embellishments/embellishment-gear-256.png"
+        },
+        {
+          "name": "gear",
+          "format": "png",
+          "size": 512,
+          "file": "assets/embellishments/embellishment-gear-512.png"
+        },
+        {
+          "name": "gear",
+          "format": "png",
+          "size": 1024,
+          "file": "assets/embellishments/embellishment-gear-1024.png"
+        }
       ]
-    },
-    "personas": {
-      "magnus": {
-        "type": "mascot",
-        "name": "Magnus",
-        "description": "Magnus is a cheeky robot whose only job is to assist the Triumph team in their mission to empower and serve the Rock community.",
-        "assets": [
-          { "variant": "full_body", "format": "svg",                           "file": "assets/personas/magnus/magnus-full-body.svg" },
-          { "variant": "head",      "format": "svg",                           "file": "assets/personas/magnus/magnus-head.svg" },
-          { "variant": "head",      "format": "svg", "background": "color_system.palette.primary", "file": "assets/personas/magnus/magnus-head-bg-invictus.svg" },
-          { "variant": "icon",      "format": "svg",                           "file": "assets/personas/magnus/magnus-icon.svg" },
-          { "variant": "icon",      "format": "svg", "background": "color_system.palette.primary", "file": "assets/personas/magnus/magnus-icon-bg-invictus.svg" }
-        ]
-      }
     },
     "image_wash": {
       "description": "A branded image effect for subtle image backgrounds in graphic applications. Apply to any photo used as a background to maintain visual consistency.",
@@ -253,8 +757,128 @@
       ]
     }
   },
+  "personas": [
+    {
+      "id": "magnus",
+      "type": "mascot",
+      "name": "Magnus",
+      "description": "Magnus is a cheeky robot whose only job is to assist the Triumph team in their mission to empower and serve the Rock community.",
+      "assets": [
+        {
+          "variant": "full_body",
+          "format": "svg",
+          "file": "assets/personas/magnus/magnus-full-body.svg"
+        },
+        {
+          "variant": "head",
+          "format": "svg",
+          "file": "assets/personas/magnus/magnus-head.svg"
+        },
+        {
+          "variant": "head",
+          "format": "svg",
+          "background": "color_system.palette.primary",
+          "file": "assets/personas/magnus/magnus-head-bg-invictus.svg"
+        },
+        {
+          "variant": "icon",
+          "format": "svg",
+          "file": "assets/personas/magnus/magnus-icon.svg"
+        },
+        {
+          "variant": "icon",
+          "format": "svg",
+          "background": "color_system.palette.primary",
+          "file": "assets/personas/magnus/magnus-icon-bg-invictus.svg"
+        }
+      ]
+    },
+    {
+      "id": "emily_forman",
+      "type": "leader",
+      "name": "Emily Forman",
+      "title": "Partner",
+      "bio": "Emily is a senior leader of Spark and co-founder of the Rock consulting firm Triumph Tech. She enjoys working with the churches and partners that make up the Rock community, and tackles many of the operational aspects of running a non-profit, as well as moderating the RockCast podcast. She is passionate about understanding and connecting people, taking on the hard projects, traveling with her family and changing the world one smile at a time.",
+      "assets": [
+        {
+          "variant": "avatar",
+          "format": "png",
+          "size": 256,
+          "file": "assets/personas/emily-forman/emily-forman-avatar-256.png"
+        },
+        {
+          "variant": "avatar",
+          "format": "png",
+          "size": 512,
+          "file": "assets/personas/emily-forman/emily-forman-avatar-512.png"
+        },
+        {
+          "variant": "avatar",
+          "format": "png",
+          "size": 1024,
+          "file": "assets/personas/emily-forman/emily-forman-avatar-1024.png"
+        }
+      ]
+    },
+    {
+      "id": "jon_edmiston",
+      "type": "leader",
+      "name": "Jon Edmiston",
+      "title": "Partner",
+      "bio": "Jon Edmiston is an Executive Director at Spark Development Network, Founding Partner of the consulting firm Triumph Tech, one of the core and original developers of Rock RMS, lead technical architect, Rock community leader, and founding vision-caster of the Rock project. He approaches life with curiosity and a determination to deliver excellence.",
+      "assets": [
+        {
+          "variant": "avatar",
+          "format": "png",
+          "size": 256,
+          "file": "assets/personas/jon-edmiston/jon-edmiston-avatar-256.png"
+        },
+        {
+          "variant": "avatar",
+          "format": "png",
+          "size": 512,
+          "file": "assets/personas/jon-edmiston/jon-edmiston-avatar-512.png"
+        },
+        {
+          "variant": "avatar",
+          "format": "png",
+          "size": 1024,
+          "file": "assets/personas/jon-edmiston/jon-edmiston-avatar-1024.png"
+        }
+      ]
+    },
+    {
+      "id": "nick_airdo",
+      "type": "leader",
+      "name": "Nick Airdo",
+      "title": "Partner",
+      "bio": "Former developer at Central Christian Church (AZ), Nick now works at Triumph Tech as a technical lead and developer. He has been involved with ChMS developer communities since 2004.",
+      "assets": [
+        {
+          "variant": "avatar",
+          "format": "png",
+          "size": 256,
+          "file": "assets/personas/nick-airdo/nick-airdo-avatar-256.png"
+        },
+        {
+          "variant": "avatar",
+          "format": "png",
+          "size": 512,
+          "file": "assets/personas/nick-airdo/nick-airdo-avatar-512.png"
+        },
+        {
+          "variant": "avatar",
+          "format": "png",
+          "size": 1024,
+          "file": "assets/personas/nick-airdo/nick-airdo-avatar-1024.png"
+        }
+      ]
+    }
+  ],
   "rules": [
     "This brand-kit.json is the single source of truth. AI agents must load and strictly follow these paths, colors, rules, and assets.",
     "All typography must use Goldman Sans exclusively — no other fonts are authorized.",
     "Apply the image_wash technique (desaturate to 0%, 15% opacity Invictus Blue layer with Luminosity blend mode) for consistent branded background images.",
-    "Persona assets (e.g., Magnus) may be u
+    "Persona assets (e.g., Magnus) may be used in marketing materials, internal communications, and community-facing content. Do not alter or distort persona artwork."
+  ]
+}
