@@ -128,27 +128,27 @@
       "combination_mark": {
         "description": "Primary full logo — icon + wordmark (preferred in most marketing and collateral contexts)",
         "assets": [
-          { "variant": "light", "format": "svg",                                    "file": "logos/primary/triumph-combination-mark-light.svg" },
-          { "variant": "dark",  "format": "svg",                                    "file": "logos/primary/triumph-combination-mark-dark.svg" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 256,  "file": "logos/primary/triumph-combination-mark-light-256.png" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 512,  "file": "logos/primary/triumph-combination-mark-light-512.png" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 1024, "file": "logos/primary/triumph-combination-mark-light-1024.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 256,  "file": "logos/primary/triumph-combination-mark-dark-256.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 512,  "file": "logos/primary/triumph-combination-mark-dark-512.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 1024, "file": "logos/primary/triumph-combination-mark-dark-1024.png" }
+          { "variant": "light", "format": "svg",                                    "file": "logos/combination-mark/triumph-combination-mark-light.svg" },
+          { "variant": "dark",  "format": "svg",                                    "file": "logos/combination-mark/triumph-combination-mark-dark.svg" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 256,  "file": "logos/combination-mark/triumph-combination-mark-light-256.png" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 512,  "file": "logos/combination-mark/triumph-combination-mark-light-512.png" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 1024, "file": "logos/combination-mark/triumph-combination-mark-light-1024.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 256,  "file": "logos/combination-mark/triumph-combination-mark-dark-256.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 512,  "file": "logos/combination-mark/triumph-combination-mark-dark-512.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 1024, "file": "logos/combination-mark/triumph-combination-mark-dark-1024.png" }
         ]
       },
       "logo_mark": {
         "description": "Icon-only submark / brandmark — for limited space, avatars, favicons, and when the full brand is already established",
         "assets": [
-          { "variant": "light", "format": "svg",                                    "file": "logos/icon/triumph-logo-mark-light.svg" },
-          { "variant": "dark",  "format": "svg",                                    "file": "logos/icon/triumph-logo-mark-dark.svg" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 256,  "file": "logos/icon/triumph-logo-mark-light-256.png" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 512,  "file": "logos/icon/triumph-logo-mark-light-512.png" },
-          { "variant": "light", "format": "png", "background": "transparent", "size": 1024, "file": "logos/icon/triumph-logo-mark-light-1024.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 256,  "file": "logos/icon/triumph-logo-mark-dark-256.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 512,  "file": "logos/icon/triumph-logo-mark-dark-512.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent", "size": 1024, "file": "logos/icon/triumph-logo-mark-dark-1024.png" }
+          { "variant": "light", "format": "svg",                                    "file": "logos/logo-mark/triumph-logo-mark-light.svg" },
+          { "variant": "dark",  "format": "svg",                                    "file": "logos/logo-mark/triumph-logo-mark-dark.svg" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 256,  "file": "logos/logo-mark/triumph-logo-mark-light-256.png" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 512,  "file": "logos/logo-mark/triumph-logo-mark-light-512.png" },
+          { "variant": "light", "format": "png", "background": "transparent", "size": 1024, "file": "logos/logo-mark/triumph-logo-mark-light-1024.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 256,  "file": "logos/logo-mark/triumph-logo-mark-dark-256.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 512,  "file": "logos/logo-mark/triumph-logo-mark-dark-512.png" },
+          { "variant": "dark",  "format": "png", "background": "transparent", "size": 1024, "file": "logos/logo-mark/triumph-logo-mark-dark-1024.png" }
         ]
       },
       "wordmark": {
@@ -168,20 +168,17 @@
         "description": "Compact brand icon for use as organization avatars, profile images, partner listings, or any context where a square/round Triumph identifier is needed (e.g., Rock RMS organization pages, directories, team profiles).",
         "usage_rules": "Prefer transparent PNG for flexibility. Use a background variant when the platform requires it. Maintain circular crop where the platform requires it.",
         "assets": [
-          { "variant": "light", "format": "svg",                                              "file": "logos/icon/triumph-logo-mark-light.svg" },
-          { "variant": "dark",  "format": "svg",                                              "file": "logos/icon/triumph-logo-mark-dark.svg" },
-          { "variant": "light", "format": "png", "background": "transparent",     "size": 256,  "file": "logos/avatar/triumph-avatar-light-transparent-256.png" },
-          { "variant": "light", "format": "png", "background": "transparent",     "size": 512,  "file": "logos/avatar/triumph-avatar-light-transparent-512.png" },
-          { "variant": "light", "format": "png", "background": "transparent",     "size": 1024, "file": "logos/avatar/triumph-avatar-light-transparent-1024.png" },
-          { "variant": "light", "format": "png", "background": "color_system.palette.primary",         "size": 256,  "file": "logos/avatar/triumph-avatar-light-primary-256.png" },
-          { "variant": "light", "format": "png", "background": "color_system.palette.primary",         "size": 512,  "file": "logos/avatar/triumph-avatar-light-primary-512.png" },
-          { "variant": "light", "format": "png", "background": "color_system.palette.primary",         "size": 1024, "file": "logos/avatar/triumph-avatar-light-primary-1024.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent",     "size": 256,  "file": "logos/avatar/triumph-avatar-dark-transparent-256.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent",     "size": 512,  "file": "logos/avatar/triumph-avatar-dark-transparent-512.png" },
-          { "variant": "dark",  "format": "png", "background": "transparent",     "size": 1024, "file": "logos/avatar/triumph-avatar-dark-transparent-1024.png" },
-          { "variant": "dark",  "format": "png", "background": "interface.softest", "size": 256,  "file": "logos/avatar/triumph-avatar-dark-softest-256.png" },
-          { "variant": "dark",  "format": "png", "background": "interface.softest", "size": 512,  "file": "logos/avatar/triumph-avatar-dark-softest-512.png" },
-          { "variant": "dark",  "format": "png", "background": "interface.softest", "size": 1024, "file": "logos/avatar/triumph-avatar-dark-softest-1024.png" }
+          { "variant": "light", "format": "svg",                                                                    "file": "logos/avatar/triumph-avatar-light.svg" },
+          { "variant": "dark",  "format": "svg",                                                                    "file": "logos/avatar/triumph-avatar-dark.svg" },
+          { "format": "png", "background": "transparent",                         "size": 256,  "file": "logos/avatar/triumph-avatar-transparent-256.png" },
+          { "format": "png", "background": "transparent",                         "size": 512,  "file": "logos/avatar/triumph-avatar-transparent-512.png" },
+          { "format": "png", "background": "transparent",                         "size": 1024, "file": "logos/avatar/triumph-avatar-transparent-1024.png" },
+          { "variant": "light", "format": "png", "background": "color_system.palette.primary",        "size": 256,  "file": "logos/avatar/triumph-avatar-light-256.png" },
+          { "variant": "light", "format": "png", "background": "color_system.palette.primary",        "size": 512,  "file": "logos/avatar/triumph-avatar-light-512.png" },
+          { "variant": "light", "format": "png", "background": "color_system.palette.primary",        "size": 1024, "file": "logos/avatar/triumph-avatar-light-1024.png" },
+          { "variant": "dark",  "format": "png", "background": "interface.softest",                   "size": 256,  "file": "logos/avatar/triumph-avatar-dark-256.png" },
+          { "variant": "dark",  "format": "png", "background": "interface.softest",                   "size": 512,  "file": "logos/avatar/triumph-avatar-dark-512.png" },
+          { "variant": "dark",  "format": "png", "background": "interface.softest",                   "size": 1024, "file": "logos/avatar/triumph-avatar-dark-1024.png" }
         ]
       }
     },
@@ -194,20 +191,6 @@
       "Do not alter, stretch, recolor (except using the provided light/dark variants), add effects, or distort any logo.",
       "For organization avatar pages (e.g., Rock RMS), use the brand avatar PNGs at 512×512 px with transparent background where possible."
     ]
-  },
-  "personas": {
-    "magnus": {
-      "type": "mascot",
-      "name": "Magnus",
-      "description": "Magnus is a cheeky robot whose only job is to assist the Triumph team in their mission to empower and serve the Rock community.",
-      "assets": [
-        { "variant": "full_body", "format": "svg",                           "file": "mascot/magnus/magnus-full-body.svg" },
-        { "variant": "head",      "format": "svg",                           "file": "mascot/magnus/magnus-head.svg" },
-        { "variant": "head",      "format": "svg", "background": "color_system.palette.primary", "file": "mascot/magnus/magnus-head-bg-invictus.svg" },
-        { "variant": "icon",      "format": "svg",                           "file": "mascot/magnus/magnus-icon.svg" },
-        { "variant": "icon",      "format": "svg", "background": "color_system.palette.primary", "file": "mascot/magnus/magnus-icon-bg-invictus.svg" }
-      ]
-    }
   },
   "voice": {
     "summary": "Clear, confident, and warm. Professional but approachable. Solution-focused with a heart for service. Avoid jargon, hype, and cold corporate language.",
@@ -237,6 +220,20 @@
         { "name": "gear",         "format": "png", "size": 1024,      "file": "assets/embellishments/embellishment-gear-1024.png" }
       ]
     },
+    "personas": {
+      "magnus": {
+        "type": "mascot",
+        "name": "Magnus",
+        "description": "Magnus is a cheeky robot whose only job is to assist the Triumph team in their mission to empower and serve the Rock community.",
+        "assets": [
+          { "variant": "full_body", "format": "svg",                           "file": "assets/personas/magnus/magnus-full-body.svg" },
+          { "variant": "head",      "format": "svg",                           "file": "assets/personas/magnus/magnus-head.svg" },
+          { "variant": "head",      "format": "svg", "background": "color_system.palette.primary", "file": "assets/personas/magnus/magnus-head-bg-invictus.svg" },
+          { "variant": "icon",      "format": "svg",                           "file": "assets/personas/magnus/magnus-icon.svg" },
+          { "variant": "icon",      "format": "svg", "background": "color_system.palette.primary", "file": "assets/personas/magnus/magnus-icon-bg-invictus.svg" }
+        ]
+      }
+    },
     "image_wash": {
       "description": "A branded image effect for subtle image backgrounds in graphic applications. Apply to any photo used as a background to maintain visual consistency.",
       "layers": [
@@ -260,6 +257,4 @@
     "This brand-kit.json is the single source of truth. AI agents must load and strictly follow these paths, colors, rules, and assets.",
     "All typography must use Goldman Sans exclusively — no other fonts are authorized.",
     "Apply the image_wash technique (desaturate to 0%, 15% opacity Invictus Blue layer with Luminosity blend mode) for consistent branded background images.",
-    "Persona assets (e.g., Magnus) may be used as a secondary/fun variant in internal or playful contexts only — never as a replacement for the official brand logos."
-  ]
-}
+    "Persona assets (e.g., Magnus) may be u
