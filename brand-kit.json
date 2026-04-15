@@ -643,98 +643,106 @@
   "brand_elements": {
     "embellishments": {
       "description": "Blueprint-style decorative elements used to add visual texture and brand character to layouts. Gray — suitable for both light and dark contexts.",
-      "assets": [
+      "items": [
         {
           "name": "web",
-          "format": "svg",
-          "file": "assets/embellishments/embellishment-web.svg"
-        },
-        {
-          "name": "web",
-          "format": "png",
-          "size": 256,
-          "file": "assets/embellishments/embellishment-web-256.png"
-        },
-        {
-          "name": "web",
-          "format": "png",
-          "size": 512,
-          "file": "assets/embellishments/embellishment-web-512.png"
-        },
-        {
-          "name": "web",
-          "format": "png",
-          "size": 1024,
-          "file": "assets/embellishments/embellishment-web-1024.png"
+          "usage": "Place behind hero sections or full-width content blocks to add depth and visual texture. Intended as a large-scale background fill — keep it behind all foreground elements and reduce opacity as needed.",
+          "assets": [
+            {
+              "format": "svg",
+              "file": "assets/embellishments/embellishment-web.svg"
+            },
+            {
+              "format": "png",
+              "size": 256,
+              "file": "assets/embellishments/embellishment-web-256.png"
+            },
+            {
+              "format": "png",
+              "size": 512,
+              "file": "assets/embellishments/embellishment-web-512.png"
+            },
+            {
+              "format": "png",
+              "size": 1024,
+              "file": "assets/embellishments/embellishment-web-1024.png"
+            }
+          ]
         },
         {
           "name": "arc",
-          "format": "svg",
-          "file": "assets/embellishments/embellishment-arc.svg"
-        },
-        {
-          "name": "arc",
-          "format": "png",
-          "size": 256,
-          "file": "assets/embellishments/embellishment-arc-256.png"
-        },
-        {
-          "name": "arc",
-          "format": "png",
-          "size": 512,
-          "file": "assets/embellishments/embellishment-arc-512.png"
-        },
-        {
-          "name": "arc",
-          "format": "png",
-          "size": 1024,
-          "file": "assets/embellishments/embellishment-arc-1024.png"
-        },
-        {
-          "name": "registration",
-          "format": "svg",
-          "file": "assets/embellishments/embellishment-registration.svg"
+          "usage": "Use at section edges or corners to frame content and introduce organic curvature to an otherwise structured layout. Works well as a transitional element between sections.",
+          "assets": [
+            {
+              "format": "svg",
+              "file": "assets/embellishments/embellishment-arc.svg"
+            },
+            {
+              "format": "png",
+              "size": 256,
+              "file": "assets/embellishments/embellishment-arc-256.png"
+            },
+            {
+              "format": "png",
+              "size": 512,
+              "file": "assets/embellishments/embellishment-arc-512.png"
+            },
+            {
+              "format": "png",
+              "size": 1024,
+              "file": "assets/embellishments/embellishment-arc-1024.png"
+            }
+          ]
         },
         {
           "name": "registration",
-          "format": "png",
-          "size": 256,
-          "file": "assets/embellishments/embellishment-registration-256.png"
-        },
-        {
-          "name": "registration",
-          "format": "png",
-          "size": 512,
-          "file": "assets/embellishments/embellishment-registration-512.png"
-        },
-        {
-          "name": "registration",
-          "format": "png",
-          "size": 1024,
-          "file": "assets/embellishments/embellishment-registration-1024.png"
-        },
-        {
-          "name": "gear",
-          "format": "svg",
-          "file": "assets/embellishments/embellishment-gear.svg"
-        },
-        {
-          "name": "gear",
-          "format": "png",
-          "size": 256,
-          "file": "assets/embellishments/embellishment-gear-256.png"
+          "usage": "Apply in compositions where technical precision is the emphasis — callouts, data-driven sections, or layouts that benefit from an engineered aesthetic. Use sparingly to preserve its intentional feel.",
+          "assets": [
+            {
+              "format": "svg",
+              "file": "assets/embellishments/embellishment-registration.svg"
+            },
+            {
+              "format": "png",
+              "size": 256,
+              "file": "assets/embellishments/embellishment-registration-256.png"
+            },
+            {
+              "format": "png",
+              "size": 512,
+              "file": "assets/embellishments/embellishment-registration-512.png"
+            },
+            {
+              "format": "png",
+              "size": 1024,
+              "file": "assets/embellishments/embellishment-registration-1024.png"
+            }
+          ]
         },
         {
           "name": "gear",
-          "format": "png",
-          "size": 512,
-          "file": "assets/embellishments/embellishment-gear-512.png"
-        },
-        {
-          "name": "gear",
-          "format": "png",
-          "size": 1024,
-          "file": "assets/embellishments/embellishment-gear-1024.png"
+          "usage": "Deploy in technical or product-focused contexts to reinforce themes of process, automation, and innovation. Use sparingly as a supporting detail rather than a dominant element.",
+          "assets": [
+            {
+              "format": "svg",
+              "file": "assets/embellishments/embellishment-gear.svg"
+            },
+            {
+              "format": "png",
+              "size": 256,
+              "file": "assets/embellishments/embellishment-gear-256.png"
+            },
+            {
+              "format": "png",
+              "size": 512,
+              "file": "assets/embellishments/embellishment-gear-512.png"
+            },
+            {
+              "format": "png",
+              "size": 1024,
+              "file": "assets/embellishments/embellishment-gear-1024.png"
+            }
+          ]
         }
       ]
     },

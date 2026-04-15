@@ -61,6 +61,22 @@ When using photography as a subtle background in graphic applications, apply the
 
 ---
 
+## Embellishments
+
+Embellishments are blueprint-style decorative elements used to add visual texture and brand character to layouts. They are rendered in gray and are suitable for both light and dark contexts. Each embellishment has a defined role — use them intentionally and avoid mixing multiple types in the same composition.
+
+**Web** — Place behind hero sections or full-width content blocks to add depth and visual texture. Intended as a large-scale background fill. Keep it behind all foreground elements and reduce opacity as needed.
+
+**Arc** — Use at section edges or corners to frame content and introduce organic curvature to an otherwise structured layout. Works well as a transitional element between sections.
+
+**Registration** — Apply in compositions where technical precision is the emphasis — callouts, data-driven sections, or layouts that benefit from an engineered aesthetic. Use sparingly to preserve its intentional feel.
+
+**Gear** — Deploy in technical or product-focused contexts to reinforce themes of process, automation, and innovation. Use sparingly as a supporting detail rather than a dominant element.
+
+All embellishment assets are available as SVG and PNG (256, 512, 1024 px) in `assets/embellishments/`. Refer to `brand_elements.embellishments` in `brand-kit.json` for the full structured reference.
+
+---
+
 ## Writing Guidelines
 
 ### Dos
